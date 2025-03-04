@@ -57,6 +57,8 @@
     <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
@@ -376,7 +378,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-spl">tugas SPL</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-spl">Tugas SPL</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-menyusun-matriks-augmented">Langkah 1: Menyusun Matriks Augmented</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-menggunakan-operasi-baris-elementer">Langkah 2: Menggunakan Operasi Baris Elementer</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-3-menyusun-matriks-ke-dalam-bentuk-eselon-baris">Langkah 3: Menyusun Matriks ke dalam Bentuk Eselon Baris</a></li>
@@ -401,15 +403,17 @@ document.write(`
 <h1>Pengertian Sistem Persamaan Linier<a class="headerlink" href="#pengertian-sistem-persamaan-linier" title="Link to this heading">#</a></h1>
 <p>Sistem Persamaan Linier (SPL) adalah kumpulan dua atau lebih persamaan yang harus dipenuhi secara bersamaan. Persamaan ini disebut linier karena setiap variabelnya berpangkat satu dan tidak ada perkalian antar variabel. Tujuan utama Sistem Persamaan Linier adalah mencari nilai variabel yang membuat semua persamaan benar.</p>
 <section id="tugas-spl">
-<h2>tugas SPL<a class="headerlink" href="#tugas-spl" title="Link to this heading">#</a></h2>
+<h2>Tugas SPL<a class="headerlink" href="#tugas-spl" title="Link to this heading">#</a></h2>
 <p>Penyelesaian sistem persamaan linear menggunakan Metode Eliminasi Gauss adalah cara untuk menyelesaikan sistem persamaan dengan mengubahnya menjadi bentuk yang lebih sederhana menggunakan operasi baris elementer. Berikut adalah langkah-langkahnya:</p>
 </section>
 <section id="langkah-1-menyusun-matriks-augmented">
 <h2>Langkah 1: Menyusun Matriks Augmented<a class="headerlink" href="#langkah-1-menyusun-matriks-augmented" title="Link to this heading">#</a></h2>
 <p>Misalkan kita memiliki sistem persamaan linear berikut:</p>
-<p>a1x + b1y + c1z = d1
-a2x + b2y + c2z = d2
-a3x + b3y + c3z = d3</p>
+<p><span class="math notranslate nohighlight">\(\begin{aligned}
+a_1 x + b_1 y + c_1 z &amp;= d_1 \\
+a_2 x + b_2 y + c_2 z &amp;= d_2 \\
+a_3 x + b_3 y + c_3 z &amp;= d_3
+\end{aligned}\)</span></p>
 <p>Langkah pertama adalah menuliskan sistem persamaan ini dalam bentuk matriks augmented (gabungan antara koefisien dan hasil):</p>
 <p>Matriks ini menggambarkan sistem persamaan linear dalam bentuk yang lebih mudah untuk dimanipulasi.</p>
 </section>
@@ -431,61 +435,72 @@ a3x + b3y + c3z = d3</p>
 <li><p>Koefisien pertama dari setiap baris (pivot) harus lebih besar dari nol dan terletak lebih jauh ke kanan pada setiap baris berikutnya.</p></li>
 </ol>
 <p>Contoh jika kita mulai dari matriks augmented seperti berikut:</p>
-<p>1  2  1  3
-2  4  1  5
-3  1  2  7</p>
+<p><span class="math notranslate nohighlight">\(\begin{pmatrix}
+1 &amp; 2 &amp; 1 &amp; 3 \\
+2 &amp; 4 &amp; 1 &amp; 5 \\
+3 &amp; 1 &amp; 2 &amp; 7
+\end{pmatrix}\)</span></p>
 <p>Kita akan menggunakan operasi baris elementer untuk mendapatkan bentuk eselon baris. Misalnya, kita ingin menghilangkan elemen-elemen di bawah pivot pertama (1 di kolom pertama).</p>
-<p>Langkah pertama, kita kurangi baris 2 dengan 2 kali baris 1, dan kurangi baris 3 dengan 3 kali baris 1, sehingga menjadi:
-1  2  1  3
-0  0  -1 -1
-0  -5 -1  1</p>
+<p>Langkah pertama, kita kurangi baris 2 dengan 2 kali baris 1, dan kurangi baris 3 dengan 3 kali baris 1, sehingga menjadi:</p>
+<p><span class="math notranslate nohighlight">\(\begin{pmatrix}
+1 &amp; 2 &amp; 1 &amp; 3 \\
+0 &amp; 0 &amp; -1 &amp; -1 \\
+0 &amp; -5 &amp; -1 &amp; 1
+\end{pmatrix}\)</span></p>
 <p>Kemudian, kita akan beralih ke kolom kedua dan melanjutkan operasi hingga mendapatkan bentuk yang lebih sederhana.</p>
 </section>
 <section id="langkah-4-mengubah-ke-bentuk-eselon-baris-tereduksi">
 <h2>Langkah 4: Mengubah ke Bentuk Eselon Baris Tereduksi<a class="headerlink" href="#langkah-4-mengubah-ke-bentuk-eselon-baris-tereduksi" title="Link to this heading">#</a></h2>
 <p>Setelah kita mendapatkan bentuk eselon baris (REF), langkah berikutnya adalah mengubahnya ke bentuk eselon baris tereduksi (RREF), di mana setiap elemen pivot menjadi 1 dan semua elemen di atas pivot menjadi 0.</p>
-<p>Misalnya, kita akan lanjutkan operasi untuk mengubah matriks menjadi:
-1  0  0  x
-0  1  0  y
-0  0  1  z</p>
-<p>Di sini, kita akan menemukan nilai dari variabel x, y, z</p>
+<p>Misalnya, kita akan lanjutkan operasi untuk mengubah matriks menjadi:</p>
+<p><span class="math notranslate nohighlight">\(\begin{pmatrix}
+1 &amp; 0 &amp; 0 &amp; x \\
+0 &amp; 1 &amp; 0 &amp; y \\
+0 &amp; 0 &amp; 1 &amp; z
+\end{pmatrix}\)</span></p>
+<p>Di sini, kita akan menemukan nilai dari variabel <span class="math notranslate nohighlight">\(x, \, y, \, z\)</span></p>
 </section>
 <section id="langkah-5-menyelesaikan-sistem">
 <h2>Langkah 5: Menyelesaikan Sistem<a class="headerlink" href="#langkah-5-menyelesaikan-sistem" title="Link to this heading">#</a></h2>
-<p>Setelah matriks berada dalam bentuk eselon baris tereduksi, kita dapat membaca solusi langsung dari matriks. Jika sistem tersebut memiliki solusi unik, maka solusi dari setiap variabel dapat ditemukan langsung dari matriks. Misalnya, jika kita memiliki bentuk:
-1  0  0  2
-0  1  0  3
-0  0  1  4</p>
-<p>Maka solusi sistem persamaan tersebut adalah:
-x = 2, y = 3, z = 4</p>
+<p>Setelah matriks berada dalam bentuk eselon baris tereduksi, kita dapat membaca solusi langsung dari matriks. Jika sistem tersebut memiliki solusi unik, maka solusi dari setiap variabel dapat ditemukan langsung dari matriks. Misalnya, jika kita memiliki bentuk:</p>
+<p><span class="math notranslate nohighlight">\(\begin{pmatrix}
+1 &amp; 0 &amp; 0 &amp; 2 \\
+0 &amp; 1 &amp; 0 &amp; 3 \\
+0 &amp; 0 &amp; 1 &amp; 4
+\end{pmatrix}\)</span></p>
+<p>Maka solusi sistem persamaan tersebut adalah:</p>
+<p><span class="math notranslate nohighlight">\(x = 2, \, y = 3, \, z = 4\)</span></p>
 </section>
 <section id="langkah-6-menyimpulkan-solusi">
 <h2>Langkah 6: Menyimpulkan Solusi<a class="headerlink" href="#langkah-6-menyimpulkan-solusi" title="Link to this heading">#</a></h2>
 </section>
 <section id="diketahui">
 <h2>Diketahui:<a class="headerlink" href="#diketahui" title="Link to this heading">#</a></h2>
-<p>x + y + z = 6</p>
-<p>2x - y + 3z = 14</p>
-<p>3x + 2y - z = 2</p>
-<p>Berikut tampilan grafis menggunakan geogebra memiliki satu penyelesaian tunggal diatas:
-<a class="reference external" href="https://www.geogebra.org/m/s6vt69gb">https://www.geogebra.org/m/s6vt69gb</a></p>
+<p><span class="math notranslate nohighlight">\(\begin{aligned}
+x + y + z &amp;= 6 \\
+2x - y + 3z &amp;= 14 \\
+3x + 2y - z &amp;= 2
+\end{aligned}\)</span></p>
+<p>Berikut tampilan grafisnya : <iframe scrolling="no" title="Solusi Tunggal" src="https://www.geogebra.org/material/iframe/id/s6vt69gb/width/1280/height/537/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1280px" height="537px" style="border:0px;"> </iframe></p>
 <p>Metode eliminasi Gauss ini berguna untuk sistem persamaan linear yang melibatkan lebih dari dua variabel, karena memungkinkan kita menyelesaikan sistem persamaan secara terstruktur dan sistematis.</p>
 </section>
 <section id="id1">
 <h2>Diketahui:<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
-<p>2x + 3y = 6</p>
-<p>4x + 6y = 12</p>
-<p>6x + 9y = 18</p>
-<p>Berikut tampilan grafis menggunakan geogebra memiliki satu penyelesaian tunggal diatas:
-<a class="reference external" href="https://www.geogebra.org/m/usrsgn7n">https://www.geogebra.org/m/usrsgn7n</a></p>
+<p><span class="math notranslate nohighlight">\(\begin{aligned}
+2x + 3y &amp;= 6 \\
+4x + 6y &amp;= 12 \\
+6x + 9y &amp;= 18
+\end{aligned}\)</span></p>
+<p>Berikut tampilan grafis nya: <iframe scrolling="no" title="Banyak solusi" src="https://www.geogebra.org/material/iframe/id/usrsgn7n/width/1280/height/537/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1280px" height="537px" style="border:0px;"> </iframe></p>
 </section>
 <section id="id2">
 <h2>Diketahui:<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
-<p>2x + 3y = 6</p>
-<p>4x + 6y = 12</p>
-<p>4x + 6y = 15</p>
-<p>Berikut tampilan grafis menggunakan geogebra memiliki satu penyelesaian tunggal diatas:
-<a class="reference external" href="https://www.geogebra.org/3d/ahuuzn7a">https://www.geogebra.org/3d/ahuuzn7a</a></p>
+<p><span class="math notranslate nohighlight">\(\begin{aligned}
+2x + 3y &amp;= 6 \\
+4x + 6y &amp;= 12 \\
+4x + 6y &amp;= 15
+\end{aligned}\)</span></p>
+<p>Berikut tampilan grafis nya: <iframe scrolling="no" title="tidak ada solusi" src="https://www.geogebra.org/material/iframe/id/ahuuzn7a/width/1280/height/537/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1280px" height="537px" style="border:0px;"> </iframe></p>
 </section>
 </section>
 
@@ -553,7 +568,7 @@ x = 2, y = 3, z = 4</p>
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-spl">tugas SPL</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-spl">Tugas SPL</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-menyusun-matriks-augmented">Langkah 1: Menyusun Matriks Augmented</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-menggunakan-operasi-baris-elementer">Langkah 2: Menggunakan Operasi Baris Elementer</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-3-menyusun-matriks-ke-dalam-bentuk-eselon-baris">Langkah 3: Menyusun Matriks ke dalam Bentuk Eselon Baris</a></li>
