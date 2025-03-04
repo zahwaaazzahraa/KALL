@@ -60,8 +60,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Notebooks with MyST Markdown" href="markdown-notebooks.html" />
-    <link rel="prev" title="Markdown Files" href="markdown.html" />
+    <link rel="next" title="&lt;no title&gt;" href="markdown-notebooks.html" />
+    <link rel="prev" title="&lt;no title&gt;" href="markdown.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,9 +180,7 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Pengertian Sistem Persamaan Linier</a></li>
-<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
 </ul>
 
     </div>
@@ -355,7 +353,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -371,6 +371,23 @@ document.write(`
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-spl">tugas SPL</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-menyusun-matriks-augmented">Langkah 1: Menyusun Matriks Augmented</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-menggunakan-operasi-baris-elementer">Langkah 2: Menggunakan Operasi Baris Elementer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-3-menyusun-matriks-ke-dalam-bentuk-eselon-baris">Langkah 3: Menyusun Matriks ke dalam Bentuk Eselon Baris</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-4-mengubah-ke-bentuk-eselon-baris-tereduksi">Langkah 4: Mengubah ke Bentuk Eselon Baris Tereduksi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-5-menyelesaikan-sistem">Langkah 5: Menyelesaikan Sistem</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-6-menyimpulkan-solusi">Langkah 6: Menyimpulkan Solusi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diketahui">Diketahui:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Diketahui:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Diketahui:</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -383,6 +400,93 @@ document.write(`
   <section class="tex2jax_ignore mathjax_ignore" id="pengertian-sistem-persamaan-linier">
 <h1>Pengertian Sistem Persamaan Linier<a class="headerlink" href="#pengertian-sistem-persamaan-linier" title="Link to this heading">#</a></h1>
 <p>Sistem Persamaan Linier (SPL) adalah kumpulan dua atau lebih persamaan yang harus dipenuhi secara bersamaan. Persamaan ini disebut linier karena setiap variabelnya berpangkat satu dan tidak ada perkalian antar variabel. Tujuan utama Sistem Persamaan Linier adalah mencari nilai variabel yang membuat semua persamaan benar.</p>
+<section id="tugas-spl">
+<h2>tugas SPL<a class="headerlink" href="#tugas-spl" title="Link to this heading">#</a></h2>
+<p>Penyelesaian sistem persamaan linear menggunakan Metode Eliminasi Gauss adalah cara untuk menyelesaikan sistem persamaan dengan mengubahnya menjadi bentuk yang lebih sederhana menggunakan operasi baris elementer. Berikut adalah langkah-langkahnya:</p>
+</section>
+<section id="langkah-1-menyusun-matriks-augmented">
+<h2>Langkah 1: Menyusun Matriks Augmented<a class="headerlink" href="#langkah-1-menyusun-matriks-augmented" title="Link to this heading">#</a></h2>
+<p>Misalkan kita memiliki sistem persamaan linear berikut:</p>
+<p>a1x + b1y + c1z = d1
+a2x + b2y + c2z = d2
+a3x + b3y + c3z = d3</p>
+<p>Langkah pertama adalah menuliskan sistem persamaan ini dalam bentuk matriks augmented (gabungan antara koefisien dan hasil):</p>
+<p>Matriks ini menggambarkan sistem persamaan linear dalam bentuk yang lebih mudah untuk dimanipulasi.</p>
+</section>
+<section id="langkah-2-menggunakan-operasi-baris-elementer">
+<h2>Langkah 2: Menggunakan Operasi Baris Elementer<a class="headerlink" href="#langkah-2-menggunakan-operasi-baris-elementer" title="Link to this heading">#</a></h2>
+<p>Operasi baris elementer adalah operasi yang digunakan untuk memanipulasi matriks augmented dengan tujuan untuk mendapatkan bentuk yang lebih sederhana. Tiga jenis operasi yang diperbolehkan adalah:</p>
+<ol class="arabic simple">
+<li><p>Menukar dua baris.</p></li>
+<li><p>Mengalikan baris dengan suatu bilangan bukan nol.</p></li>
+<li><p>Menambahkan kelipatan dari satu baris ke baris lain.</p></li>
+</ol>
+<p>Dengan operasi ini, kita akan mengubah matriks augmented menjadi bentuk baris eselon, di mana setiap baris di bawah baris utama memiliki lebih banyak nol, sehingga memungkinkan kita untuk menyelesaikan sistem persamaan.</p>
+</section>
+<section id="langkah-3-menyusun-matriks-ke-dalam-bentuk-eselon-baris">
+<h2>Langkah 3: Menyusun Matriks ke dalam Bentuk Eselon Baris<a class="headerlink" href="#langkah-3-menyusun-matriks-ke-dalam-bentuk-eselon-baris" title="Link to this heading">#</a></h2>
+<p>Langkah ini bertujuan untuk mengubah matriks ke dalam bentuk yang disebut <strong>bentuk eselon baris</strong> atau <strong>row echelon form</strong> (REF), di mana:</p>
+<ol class="arabic simple">
+<li><p>Baris yang hanya berisi nol berada di bagian bawah matriks.</p></li>
+<li><p>Koefisien pertama dari setiap baris (pivot) harus lebih besar dari nol dan terletak lebih jauh ke kanan pada setiap baris berikutnya.</p></li>
+</ol>
+<p>Contoh jika kita mulai dari matriks augmented seperti berikut:</p>
+<p>1  2  1  3
+2  4  1  5
+3  1  2  7</p>
+<p>Kita akan menggunakan operasi baris elementer untuk mendapatkan bentuk eselon baris. Misalnya, kita ingin menghilangkan elemen-elemen di bawah pivot pertama (1 di kolom pertama).</p>
+<p>Langkah pertama, kita kurangi baris 2 dengan 2 kali baris 1, dan kurangi baris 3 dengan 3 kali baris 1, sehingga menjadi:
+1  2  1  3
+0  0  -1 -1
+0  -5 -1  1</p>
+<p>Kemudian, kita akan beralih ke kolom kedua dan melanjutkan operasi hingga mendapatkan bentuk yang lebih sederhana.</p>
+</section>
+<section id="langkah-4-mengubah-ke-bentuk-eselon-baris-tereduksi">
+<h2>Langkah 4: Mengubah ke Bentuk Eselon Baris Tereduksi<a class="headerlink" href="#langkah-4-mengubah-ke-bentuk-eselon-baris-tereduksi" title="Link to this heading">#</a></h2>
+<p>Setelah kita mendapatkan bentuk eselon baris (REF), langkah berikutnya adalah mengubahnya ke bentuk eselon baris tereduksi (RREF), di mana setiap elemen pivot menjadi 1 dan semua elemen di atas pivot menjadi 0.</p>
+<p>Misalnya, kita akan lanjutkan operasi untuk mengubah matriks menjadi:
+1  0  0  x
+0  1  0  y
+0  0  1  z</p>
+<p>Di sini, kita akan menemukan nilai dari variabel x, y, z</p>
+</section>
+<section id="langkah-5-menyelesaikan-sistem">
+<h2>Langkah 5: Menyelesaikan Sistem<a class="headerlink" href="#langkah-5-menyelesaikan-sistem" title="Link to this heading">#</a></h2>
+<p>Setelah matriks berada dalam bentuk eselon baris tereduksi, kita dapat membaca solusi langsung dari matriks. Jika sistem tersebut memiliki solusi unik, maka solusi dari setiap variabel dapat ditemukan langsung dari matriks. Misalnya, jika kita memiliki bentuk:
+1  0  0  2
+0  1  0  3
+0  0  1  4</p>
+<p>Maka solusi sistem persamaan tersebut adalah:
+x = 2, y = 3, z = 4</p>
+</section>
+<section id="langkah-6-menyimpulkan-solusi">
+<h2>Langkah 6: Menyimpulkan Solusi<a class="headerlink" href="#langkah-6-menyimpulkan-solusi" title="Link to this heading">#</a></h2>
+</section>
+<section id="diketahui">
+<h2>Diketahui:<a class="headerlink" href="#diketahui" title="Link to this heading">#</a></h2>
+<p>x + y + z = 6</p>
+<p>2x - y + 3z = 14</p>
+<p>3x + 2y - z = 2</p>
+<p>Berikut tampilan grafis menggunakan geogebra memiliki satu penyelesaian tunggal diatas:
+<a class="reference external" href="https://www.geogebra.org/m/s6vt69gb">https://www.geogebra.org/m/s6vt69gb</a></p>
+<p>Metode eliminasi Gauss ini berguna untuk sistem persamaan linear yang melibatkan lebih dari dua variabel, karena memungkinkan kita menyelesaikan sistem persamaan secara terstruktur dan sistematis.</p>
+</section>
+<section id="id1">
+<h2>Diketahui:<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<p>2x + 3y = 6</p>
+<p>4x + 6y = 12</p>
+<p>6x + 9y = 18</p>
+<p>Berikut tampilan grafis menggunakan geogebra memiliki satu penyelesaian tunggal diatas:
+<a class="reference external" href="https://www.geogebra.org/m/usrsgn7n">https://www.geogebra.org/m/usrsgn7n</a></p>
+</section>
+<section id="id2">
+<h2>Diketahui:<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<p>2x + 3y = 6</p>
+<p>4x + 6y = 12</p>
+<p>4x + 6y = 15</p>
+<p>Berikut tampilan grafis menggunakan geogebra memiliki satu penyelesaian tunggal diatas:
+<a class="reference external" href="https://www.geogebra.org/3d/ahuuzn7a">https://www.geogebra.org/3d/ahuuzn7a</a></p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -421,7 +525,7 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Markdown Files</p>
+        <p class="prev-next-title">&lt;no title&gt;</p>
       </div>
     </a>
     <a class="right-next"
@@ -429,7 +533,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Notebooks with MyST Markdown</p>
+        <p class="prev-next-title">&lt;no title&gt;</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -439,6 +543,30 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-spl">tugas SPL</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-menyusun-matriks-augmented">Langkah 1: Menyusun Matriks Augmented</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-menggunakan-operasi-baris-elementer">Langkah 2: Menggunakan Operasi Baris Elementer</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-3-menyusun-matriks-ke-dalam-bentuk-eselon-baris">Langkah 3: Menyusun Matriks ke dalam Bentuk Eselon Baris</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-4-mengubah-ke-bentuk-eselon-baris-tereduksi">Langkah 4: Mengubah ke Bentuk Eselon Baris Tereduksi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-5-menyelesaikan-sistem">Langkah 5: Menyelesaikan Sistem</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-6-menyimpulkan-solusi">Langkah 6: Menyimpulkan Solusi</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#diketahui">Diketahui:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Diketahui:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Diketahui:</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
