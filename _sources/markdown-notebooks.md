@@ -1,164 +1,53 @@
-## Tugas 3
-Persamaan dengan 3 Variabel dengan Hasil 1,0,0
-
-Berikut 3 persamaan dengan 3 variabel dengan hasil 1,0,0:
-
-\begin{aligned}
-\quad \text{(Persamaan 1)}4x_1 + 3x_2 + 2x_3 &= 4 \\
-\quad \text{(Persamaan 2)}6x_1 - 5x_2 + x_3 &= 6 \\
-\quad \text{(Persamaan 3)}8x_1 + 2x_2 + 3x_3 &= 8
-\end{aligned}
-
-Kita akan menyelesaikan dengan metode eliminasi dan subtitusi
-
-### Langkah 1: Langkah 1: Eliminasi Salah Satu Variabel
-
-Kita akan menghilangkan \begin{equation}
-x_1
+## Bab 5 Transformasi Matriks
+Bab 5.1 – Transformasi Matriks
+Bab ini membahas konsep transformasi matriks, yaitu bagaimana matriks digunakan untuk mengubah vektor menjadi vektor lain melalui operasi perkalian. Transformasi ini bersifat linear dan merupakan bagian dari fungsi linear antar ruang vektor. Dengan menggunakan matriks, kita dapat mendefinisikan suatu fungsi\begin{equation}
+T(\vec{x}) = A\vec{x}
+\end{equation} di mana 𝐴 adalah matriks dan \begin{equation}
+\vec{x}
 \end{equation}
-dari Persamaan 2 dan 3 dengan menggunakan Persamaan 1 sebagai acuan.Eliminasi \begin{equation}x_1
-\end{equation}dari Persamaan 2 menjadi nol. Untuk itu, kita lakukan:
+adalah vektor kolom. Bab ini menekankan pemahaman visual dari transformasi ini, khususnya dalam dimensi dua \begin{equation}
+\mathbb{R}^2
+\end{equation}, agar lebih mudah dibayangkan. Visualisasi ini penting dalam aplikasi seperti grafika komputer, karena membantu memahami bagaimana bentuk-bentuk geometri berubah ketika dikalikan dengan matriks. Transformasi matriks bisa mengubah arah dan panjang vektor, serta mengubah bentuk seperti kotak satuan menjadi paralelogram. Bab ini juga menunjukkan bahwa meskipun aturan perkalian matriks awalnya tampak aneh, justru aturan tersebut memungkinkan transformasi linear terjadi dengan cara yang konsisten dan efisien. Sebagai contoh, ketika vektor dijumlahkan sebelum dikalikan dengan matriks, hasilnya sama dengan jika masing-masing vektor dikalikan dulu, lalu hasilnya dijumlahkan, menunjukkan sifat distributif dari transformasi linear. Dengan demikian, transformasi matriks menggabungkan konsep aljabar dengan visualisasi geometri secara harmonis.
 
-- Kalikan Persamaan 1 dengan 3:
+Pada Bab 5, bagian mengenai *Transformasi Matriks* membahas bagaimana matriks dapat digunakan untuk mengubah vektor, yang dikenal sebagai transformasi matriks. Contoh pertama menunjukkan bagaimana perkalian matriks dengan vektor menghasilkan vektor baru dengan panjang yang berbeda, dan kadang-kadang dengan arah yang berbeda. Dalam contoh yang diberikan, matriks \( A \) mengubah vektor-vektor \begin{pmatrix} \vec{x}, \vec{y}, \vec{z} \end{pmatrix}
+menjadi vektor-vektor baru \begin{pmatrix} A \vec{x}, A \vec{y}, A \vec{z} \end{pmatrix}
+, yang panjang dan arahnya berubah. Hal menarik adalah bahwa dalam beberapa kasus, seperti untuk vektor \begin{equation}
+\vec{x}
+\end{equation}, arah vektor tetap tidak berubah setelah perkalian matriks. Perkalian matriks dapat mengubah panjang vektor, meningkatkan atau menguranginya, atau bahkan tidak mengubah panjang sama sekali. Arah vektor juga bisa berubah, tetap sama, atau berubah untuk beberapa vektor dan tidak untuk yang lain. Dalam bagian ini, penulis juga menekankan pentingnya mengenali pola perilaku matriks terhadap vektor, dan alih-alih mengandalkan percobaan acak, mereka mengusulkan untuk menggabungkan konsep yang sudah kita kenal, seperti penjumlahan vektor, untuk lebih memahami efek dari transformasi matriks. Sebuah contoh tambahan menunjukkan bagaimana perkalian matriks dan penjumlahan vektor dapat digabungkan untuk memvisualisasikan perubahan yang terjadi pada vektor setelah transformasi matriks.
 
-\begin{equation}
-12x_1 + 9x_2 + 6x_3 = 12
-\end{equation}
+Bagian ini membahas bagaimana perkalian matriks berinteraksi dengan penjumlahan vektor. Dalam contoh yang diberikan, tiga vektor \begin{equation*}
+\left(
+\vec{x} = \begin{bmatrix} 2 \\ 1 \end{bmatrix}, \quad
+\vec{y} = \begin{bmatrix} -1 \\ 1 \end{bmatrix}, \quad
+\vec{x} + \vec{y} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}
+\right)
+\end{equation*}
+dikalikan dengan matriks \(A\), dan hasilnya menunjukkan bahwa \begin{equation*}
+A(\vec{x} + \vec{y}) = A\vec{x} + A\vec{y}
+\end{equation*}
+ ,yang merupakan sifat distributif dari perkalian matriks. Hal ini divisualisasikan secara grafis melalui sketsa vektor, menekankan bahwa operasi ini tidak hanya berlaku secara aljabar, tetapi juga dapat dilihat secara geometris. Contoh berikutnya menunjukkan bagaimana beberapa vektor ketika dikalikan dengan matriks \(A\) menghasilkan vektor-vektor yang sejajar atau bahkan nol, menunjukkan bahwa matriks dapat mengubah panjang dan arah vektor secara signifikan, bahkan "meratakan" vektor menjadi nol. Fenomena ini menimbulkan pertanyaan apakah semua vektor akan mengalami efek serupa saat dikalikan dengan matriks tersebut. Akhirnya, bagian ini menutup dengan transisi menuju eksplorasi transformasi seluruh bidang Kartesius oleh matriks, bukan hanya satu vektor, sebagai kelanjutan dari pemahaman visual terhadap transformasi matriks.
+Transformasi matriks mengubah bidang Kartesius secara konsisten, menjaga garis tetap lurus dan bentuk tidak rusak. Untuk memvisualisasikan dampaknya, kita bisa melihat bagaimana matriks mengubah persegi satuan. Dengan mengalikan sudut-sudut persegi satuan (dalam bentuk vektor) dengan matriks A, kita bisa melihat bentuk baru hasil transformasi. Proses ini bisa dipercepat menggunakan kalkulator atau matriks bantu, sehingga kita tak perlu menghitung vektor satu per satu.
+**Ringkasan Paragraf dalam Bahasa Indonesia:**
 
-- Kalikan Persamaan 2 dengan 2:
-\begin{equation}
-12x_1 - 10x_2 + 2x_3 = 12
-\end{equation}
+Pada Gambar 5.1.8, kita melihat bagaimana persegi satuan berubah menjadi jajaran genjang setelah dikalikan dengan matriks. Titik-titik sudutnya berpindah tempat, seolah-olah bentuknya tidak hanya diregangkan, tetapi juga diputar atau dibalik. Transformasi ini tetap menjaga sifat garis lurus—seperti dijelaskan lebih lanjut dalam Gambar 5.1.9, di mana titik-titik tambahan pada persegi satuan berubah posisi namun tetap berada pada garis lurus dengan proporsi jarak yang sama. Ini menunjukkan bahwa transformasi matriks menjaga struktur geometris secara konsisten. Sebelum membahas lebih dalam, Contoh 5.1.10 memperkenalkan satu lagi transformasi, menggunakan matriks rotasi  
+\[
+A = \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}
+\]
+yang akan memutar persegi satuan, dan membantu memvisualisasikan bagaimana suatu wilayah berubah di bawah pengaruh matriks.
+Pada contoh sebelumnya, kita melihat bagaimana kita dapat mentransformasikan bidang Kartesius dengan perkalian matriks 2x2. Dalam hal ini, kita mulai dengan meletakkan vektor-vektor yang mewakili setiap sudut persegi satuan dalam sebuah matriks dan kemudian mengalikannya dengan matriks **A**. Hasil perkalian matriks ini memberikan hasil yang menggambarkan transformasi dari persegi satuan tersebut. Gambar **5.1.11** menunjukkan persegi satuan yang ditransformasikan oleh matriks **A**, yang menggambarkan rotasi berlawanan arah jarum jam sebesar 90° sekitar titik asal. Perhatikan bagaimana persegi tidak hanya bergerak ke kiri atau "terjemah" secara horizontal, tetapi justru diputar tanpa mengubah bentuk atau ukuran aslinya. 
 
-Sekarang, kurangkan kedua persamaan ini:
-\begin{equation}
-12x_1 + 9x_2 + 6x_3 - (12x_1 - 10x_2 + 2x_3) = 12 - 12
-\end{equation}
+Pada titik ini, kita telah mulai menjelajahi bagaimana bidang Kartesius dapat ditransformasikan dengan perkalian matriks 2x2. Dari contoh yang telah diberikan, kita mendapatkan intuisi dasar tentang bagaimana perubahan bentuk pada persegi satuan membantu kita memahami perubahan yang terjadi pada seluruh bidang. Namun, dua pertanyaan penting muncul: pertama, bagaimana kita menemukan matriks yang melakukan transformasi tertentu pada bidang, seperti rotasi 180°; dan kedua, bagaimana pengetahuan tentang bagaimana persegi satuan ditransformasikan membantu kita memahami transformasi pada seluruh bidang?
+Untuk menjawab pertanyaan pertama, kita perlu melihat lebih dalam contoh-contoh sebelumnya dan mencoba menghubungkan posisi akhir titik-titik pada persegi satuan dengan matriks **A** yang digunakan. Sebagai contoh, kita dapat mencatat bahwa vektor nol (titik asal persegi satuan) tidak bergerak sama sekali setelah transformasi, yang masuk akal karena perkalian dengan vektor nol selalu menghasilkan vektor nol.
+Pada bagian ini, kita melanjutkan dengan memeriksa bagaimana matriks transformasi bekerja pada sudut-sudut persegi satuan dan bagaimana kita dapat memahami perubahan bentuk di bidang Kartesius. Ada beberapa poin penting yang perlu dipahami:
 
-\begin{equation}
-(12x_1 - 12x_1) + (9x_2 + 10x_2) + (6x_3 - 2x_3) = 0
-\end{equation}
+1. **Titik sudut "persegi"**, yang berkorespondensi dengan vektor \(\begin{bmatrix} 1 \\ 0 \end{bmatrix}\), selalu dipetakan ke vektor yang ada di kolom pertama matriks \(A\).
+2. **Titik sudut "segitiga"**, yang berkorespondensi dengan vektor \(\begin{bmatrix} 0 \\ 1 \end{bmatrix}\), selalu dipetakan ke vektor yang ada di kolom kedua matriks \(A\).
+3. **Titik sudut "titik putih"**, yang merupakan hasil penjumlahan dari dua sudut lainnya, dipetakan ke jumlah dari kedua kolom matriks \(A\).
 
-\begin{equation}
-19x_2 + 4x_3 = 0
-\end{equation}
+Pemahaman ini sangat berguna ketika kita mencoba mencari matriks yang mewakili transformasi tertentu pada bidang Kartesius. Misalnya, untuk menemukan matriks yang melakukan rotasi atau transformasi lainnya, kita cukup melihat bagaimana setiap sudut persegi satuan ditransformasikan dan menggunakan informasi tersebut untuk menentukan kolom pertama dan kedua matriks transformasi.
 
-Persamaan Baru:
-\begin{equation}
-19x_2 + 4x_3 = 0 \quad \text{(Persamaan 4)}
-\end{equation}
+Misalnya, pada contoh **5.1.12**, kita diminta untuk menemukan matriks yang melakukan refleksi bidang Kartesius terhadap sumbu-x dan kemudian melakukan peregangan horizontal dengan faktor dua. Pertama, kita mempertimbangkan sudut persegi satuan vektor = \begin{bmatrix} 1 \\ 0 \end{bmatrix}\). Setelah refleksi terhadap sumbu-x, titik ini akan tetap berada pada posisi yang sama secara horizontal, tetapi dengan transformasi yang dilakukan pada posisi vertikalnya. Dengan demikian, melalui pemahaman ini, kita dapat menentukan bagaimana matriks \(A\) akan dibentuk untuk melakukan transformasi tersebut.
 
-Eliminasi \begin{equation}
-x_1
-\end{equation} dari Persamaan 3
+Secara keseluruhan, dengan mengetahui bagaimana sudut-sudut tertentu dari persegi satuan ditransformasikan, kita dapat dengan mudah menemukan matriks yang melakukan transformasi pada seluruh bidang Kartesius.
 
-Kita ingin membuat koefisien \begin{equation}
-x_1
-\end{equation} 
-di Persamaan 3 menjadi nol. Untuk itu, kita lakukan:
-
-- Kalikan Persamaan 1 dengan 2:
-\begin{equation}
-8x_1 + 6x_2 + 4x_3 = 8
-\end{equation}
-- Persamaan 3 tetap:
-\begin{equation}
-8x_1 + 2x_2 + 3x_3 = 8
-\end{equation}
-
-Sekarang, kurangkan kedua persamaan ini:
-\begin{equation}
-(8x_1 + 6x_2 + 4x_3) - (8x_1 + 2x_2 + 3x_3) = 8 - 8
-\end{equation}
-
-\begin{equation}
-(8x_1 - 8x_1) + (6x_2 - 2x_2) + (4x_3 - 3x_3) = 0
-\end{equation}
-
-\begin{equation}
-0 + (6x_2 - 2x_2) + (4x_3 - 3x_3) = 0
-\end{equation}
-
-\begin{equation}
-4x_2 + x_3 = 0
-\end{equation}
-
-Persamaan baru:
-\begin{equation}
-4x_2 + x_3 = 0 \quad \text{(Persamaan 5)}
-\end{equation}
-
-### Langkah 2: Eliminasi
-\begin{equation}
-x_3
-\end{equation}
-
-- Sekarang kita memiliki sistem dua persamaan dengan dua variabel:
-\begin{equation}
-19x_2 + 4x_3 = 0 \quad \text{(Persamaan 4)}
-\end{equation}
-
-\begin{equation}
-4x_2 + x_3 = 0 \quad \text{(Persamaan 5)}
-\end{equation}
-
-- Eliminasi \begin{equation}
-x_3
-\end{equation} dengan mengalikan persamaan 5 dengan 4:
-\begin{equation}
-16x_2 + 4x_3 = 0
-\end{equation}
-
-- Kurangkan dengan Persamaan 4:
-\begin{equation}
-(19x_2 + 4x_3) - (16x_2 + 4x_3) = 0 - 0
-\end{equation}
-
-\begin{equation}
-(19x_2 - 16x_2) + (4x_3 - 4x_3) = 0
-\end{equation}
-
-\begin{equation}
-3x_2 = 0
-\end{equation}
-
-- Sehingga:
-\begin{equation}
-x_2 = 0
-\end{equation}
-
-- Subtitusi \begin{equation}
-x_2 = 0
-\end{equation} ke persamaan 5:
-\begin{equation}
-4(0) + x_3 = 0
-\end{equation}
-
-\begin{equation}
-x_3 = 0
-\end{equation}
-
-### Langkah 3: Substitusi ke Persamaan 1
-
-- Sekarang kita substitusi \begin{equation}
-x_2 = 0
-\end{equation} dan \begin{equation}
-x_3 = 0
-\end{equation} ke persamaan 1:
-\begin{equation}
-4x_1 + 3(0) + 2(0) = 4
-\end{equation}
-
-\begin{equation}
-4x_1 = 4
-\end{equation}
-
-\begin{equation}
-x_1 = 1
-\end{equation}
-
-### Kesimpulan
-Solusi dari sistem persamaan ini adalah:
-\begin{equation}
-(x_1, x_2, x_3) = (1,0,0)
-\end{equation}
+Pada contoh **5.1.19**, kita diminta untuk menemukan matriks **A** yang melakukan serangkaian transformasi pada bidang Kartesius secara berurutan, yaitu shear vertikal dengan faktor 0,5, rotasi berlawanan arah jarum jam sebesar 30° tentang asal, peregangan horizontal dengan faktor 2, dan refleksi diagonal terhadap garis **y = x**. Untuk melakukan ini, pertama-tama kita menemukan matriks untuk masing-masing transformasi. Matriks shear vertikal adalah **A1**, matriks rotasi adalah **A2**, matriks peregangan horizontal adalah **A3**, dan matriks refleksi diagonal adalah **A4**. Kemudian, kita mengalikan matriks-matriks tersebut dalam urutan **A = A4A3A2A1** untuk mendapatkan matriks yang mewakili transformasi gabungan. Proses ini menunjukkan bagaimana kita bisa melakukan transformasi kompleks dengan hanya mengalikan beberapa matriks dasar yang sudah diketahui. Dalam hal ini, perkalian matriks memberikan hasil yang sesuai dengan urutan operasi yang dilakukan, dan dengan demikian memungkinkan kita untuk mengetahui posisi akhir suatu vektor setelah transformasi. Gambar **5.1.20** dan **5.1.21** memperlihatkan hasil transformasi pada persegi satuan dan bentuk lainnya. Meskipun transformasi ini tampak rumit, jika kita memahami matriks dasar untuk setiap transformasi, melakukan transformasi kompleks pada bidang Kartesius menjadi lebih mudah, karena semuanya dapat diselesaikan dengan perkalian matriks secara sistematis.
