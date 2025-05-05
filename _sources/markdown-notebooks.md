@@ -1,53 +1,134 @@
-## Bab 5 Transformasi Matriks
-Bab 5.1 – Transformasi Matriks
-Bab ini membahas konsep transformasi matriks, yaitu bagaimana matriks digunakan untuk mengubah vektor menjadi vektor lain melalui operasi perkalian. Transformasi ini bersifat linear dan merupakan bagian dari fungsi linear antar ruang vektor. Dengan menggunakan matriks, kita dapat mendefinisikan suatu fungsi\begin{equation}
-T(\vec{x}) = A\vec{x}
-\end{equation} di mana 𝐴 adalah matriks dan \begin{equation}
-\vec{x}
-\end{equation}
-adalah vektor kolom. Bab ini menekankan pemahaman visual dari transformasi ini, khususnya dalam dimensi dua \begin{equation}
-\mathbb{R}^2
-\end{equation}, agar lebih mudah dibayangkan. Visualisasi ini penting dalam aplikasi seperti grafika komputer, karena membantu memahami bagaimana bentuk-bentuk geometri berubah ketika dikalikan dengan matriks. Transformasi matriks bisa mengubah arah dan panjang vektor, serta mengubah bentuk seperti kotak satuan menjadi paralelogram. Bab ini juga menunjukkan bahwa meskipun aturan perkalian matriks awalnya tampak aneh, justru aturan tersebut memungkinkan transformasi linear terjadi dengan cara yang konsisten dan efisien. Sebagai contoh, ketika vektor dijumlahkan sebelum dikalikan dengan matriks, hasilnya sama dengan jika masing-masing vektor dikalikan dulu, lalu hasilnya dijumlahkan, menunjukkan sifat distributif dari transformasi linear. Dengan demikian, transformasi matriks menggabungkan konsep aljabar dengan visualisasi geometri secara harmonis.
+# Tugas 1
 
-Pada Bab 5, bagian mengenai *Transformasi Matriks* membahas bagaimana matriks dapat digunakan untuk mengubah vektor, yang dikenal sebagai transformasi matriks. Contoh pertama menunjukkan bagaimana perkalian matriks dengan vektor menghasilkan vektor baru dengan panjang yang berbeda, dan kadang-kadang dengan arah yang berbeda. Dalam contoh yang diberikan, matriks \( A \) mengubah vektor-vektor \begin{pmatrix} \vec{x}, \vec{y}, \vec{z} \end{pmatrix}
-menjadi vektor-vektor baru \begin{pmatrix} A \vec{x}, A \vec{y}, A \vec{z} \end{pmatrix}
-, yang panjang dan arahnya berubah. Hal menarik adalah bahwa dalam beberapa kasus, seperti untuk vektor \begin{equation}
-\vec{x}
-\end{equation}, arah vektor tetap tidak berubah setelah perkalian matriks. Perkalian matriks dapat mengubah panjang vektor, meningkatkan atau menguranginya, atau bahkan tidak mengubah panjang sama sekali. Arah vektor juga bisa berubah, tetap sama, atau berubah untuk beberapa vektor dan tidak untuk yang lain. Dalam bagian ini, penulis juga menekankan pentingnya mengenali pola perilaku matriks terhadap vektor, dan alih-alih mengandalkan percobaan acak, mereka mengusulkan untuk menggabungkan konsep yang sudah kita kenal, seperti penjumlahan vektor, untuk lebih memahami efek dari transformasi matriks. Sebuah contoh tambahan menunjukkan bagaimana perkalian matriks dan penjumlahan vektor dapat digabungkan untuk memvisualisasikan perubahan yang terjadi pada vektor setelah transformasi matriks.
+Untuk membuktikan bahwa suatu pemetaan 
+$T: \mathbb{R}^2 \to \mathbb{R}^2$
 
-Bagian ini membahas bagaimana perkalian matriks berinteraksi dengan penjumlahan vektor. Dalam contoh yang diberikan, tiga vektor \begin{equation*}
-\left(
-\vec{x} = \begin{bmatrix} 2 \\ 1 \end{bmatrix}, \quad
-\vec{y} = \begin{bmatrix} -1 \\ 1 \end{bmatrix}, \quad
-\vec{x} + \vec{y} = \begin{bmatrix} 1 \\ 2 \end{bmatrix}
-\right)
-\end{equation*}
-dikalikan dengan matriks \(A\), dan hasilnya menunjukkan bahwa \begin{equation*}
-A(\vec{x} + \vec{y}) = A\vec{x} + A\vec{y}
-\end{equation*}
- ,yang merupakan sifat distributif dari perkalian matriks. Hal ini divisualisasikan secara grafis melalui sketsa vektor, menekankan bahwa operasi ini tidak hanya berlaku secara aljabar, tetapi juga dapat dilihat secara geometris. Contoh berikutnya menunjukkan bagaimana beberapa vektor ketika dikalikan dengan matriks \(A\) menghasilkan vektor-vektor yang sejajar atau bahkan nol, menunjukkan bahwa matriks dapat mengubah panjang dan arah vektor secara signifikan, bahkan "meratakan" vektor menjadi nol. Fenomena ini menimbulkan pertanyaan apakah semua vektor akan mengalami efek serupa saat dikalikan dengan matriks tersebut. Akhirnya, bagian ini menutup dengan transisi menuju eksplorasi transformasi seluruh bidang Kartesius oleh matriks, bukan hanya satu vektor, sebagai kelanjutan dari pemahaman visual terhadap transformasi matriks.
-Transformasi matriks mengubah bidang Kartesius secara konsisten, menjaga garis tetap lurus dan bentuk tidak rusak. Untuk memvisualisasikan dampaknya, kita bisa melihat bagaimana matriks mengubah persegi satuan. Dengan mengalikan sudut-sudut persegi satuan (dalam bentuk vektor) dengan matriks A, kita bisa melihat bentuk baru hasil transformasi. Proses ini bisa dipercepat menggunakan kalkulator atau matriks bantu, sehingga kita tak perlu menghitung vektor satu per satu.
-**Ringkasan Paragraf dalam Bahasa Indonesia:**
+adalah transformasi linier, kita harus menunjukkan bahwa dua sifat berikut terpenuhi untuk semua vektor
+$\vec{u}, \vec{v} \in \mathbb{R}^2$
+ dan semua skalar $c \in \mathbb{R}$
 
-Pada Gambar 5.1.8, kita melihat bagaimana persegi satuan berubah menjadi jajaran genjang setelah dikalikan dengan matriks. Titik-titik sudutnya berpindah tempat, seolah-olah bentuknya tidak hanya diregangkan, tetapi juga diputar atau dibalik. Transformasi ini tetap menjaga sifat garis lurus—seperti dijelaskan lebih lanjut dalam Gambar 5.1.9, di mana titik-titik tambahan pada persegi satuan berubah posisi namun tetap berada pada garis lurus dengan proporsi jarak yang sama. Ini menunjukkan bahwa transformasi matriks menjaga struktur geometris secara konsisten. Sebelum membahas lebih dalam, Contoh 5.1.10 memperkenalkan satu lagi transformasi, menggunakan matriks rotasi  
-\[
-A = \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix}
-\]
-yang akan memutar persegi satuan, dan membantu memvisualisasikan bagaimana suatu wilayah berubah di bawah pengaruh matriks.
-Pada contoh sebelumnya, kita melihat bagaimana kita dapat mentransformasikan bidang Kartesius dengan perkalian matriks 2x2. Dalam hal ini, kita mulai dengan meletakkan vektor-vektor yang mewakili setiap sudut persegi satuan dalam sebuah matriks dan kemudian mengalikannya dengan matriks **A**. Hasil perkalian matriks ini memberikan hasil yang menggambarkan transformasi dari persegi satuan tersebut. Gambar **5.1.11** menunjukkan persegi satuan yang ditransformasikan oleh matriks **A**, yang menggambarkan rotasi berlawanan arah jarum jam sebesar 90° sekitar titik asal. Perhatikan bagaimana persegi tidak hanya bergerak ke kiri atau "terjemah" secara horizontal, tetapi justru diputar tanpa mengubah bentuk atau ukuran aslinya. 
 
-Pada titik ini, kita telah mulai menjelajahi bagaimana bidang Kartesius dapat ditransformasikan dengan perkalian matriks 2x2. Dari contoh yang telah diberikan, kita mendapatkan intuisi dasar tentang bagaimana perubahan bentuk pada persegi satuan membantu kita memahami perubahan yang terjadi pada seluruh bidang. Namun, dua pertanyaan penting muncul: pertama, bagaimana kita menemukan matriks yang melakukan transformasi tertentu pada bidang, seperti rotasi 180°; dan kedua, bagaimana pengetahuan tentang bagaimana persegi satuan ditransformasikan membantu kita memahami transformasi pada seluruh bidang?
-Untuk menjawab pertanyaan pertama, kita perlu melihat lebih dalam contoh-contoh sebelumnya dan mencoba menghubungkan posisi akhir titik-titik pada persegi satuan dengan matriks **A** yang digunakan. Sebagai contoh, kita dapat mencatat bahwa vektor nol (titik asal persegi satuan) tidak bergerak sama sekali setelah transformasi, yang masuk akal karena perkalian dengan vektor nol selalu menghasilkan vektor nol.
-Pada bagian ini, kita melanjutkan dengan memeriksa bagaimana matriks transformasi bekerja pada sudut-sudut persegi satuan dan bagaimana kita dapat memahami perubahan bentuk di bidang Kartesius. Ada beberapa poin penting yang perlu dipahami:
+#### 1. Penjumlahan Vektor:
+$T(\vec{u} + \vec{v}) = T(\vec{u}) + T(\vec{v})$
+#### 2. Perkalian Skalar:
+$T(c \vec{v}) = cT(\vec{v})$
 
-1. **Titik sudut "persegi"**, yang berkorespondensi dengan vektor \(\begin{bmatrix} 1 \\ 0 \end{bmatrix}\), selalu dipetakan ke vektor yang ada di kolom pertama matriks \(A\).
-2. **Titik sudut "segitiga"**, yang berkorespondensi dengan vektor \(\begin{bmatrix} 0 \\ 1 \end{bmatrix}\), selalu dipetakan ke vektor yang ada di kolom kedua matriks \(A\).
-3. **Titik sudut "titik putih"**, yang merupakan hasil penjumlahan dari dua sudut lainnya, dipetakan ke jumlah dari kedua kolom matriks \(A\).
+### Diberikan:
+Pemetaan $T(v_1, v_2) = (v_1 + v_2, v_1)$
+Misalkan:
+$\vec{v} = (v_1, v_2) \quad \text{dan} 
+\quad \vec{u} = (u_1, u_2)$
 
-Pemahaman ini sangat berguna ketika kita mencoba mencari matriks yang mewakili transformasi tertentu pada bidang Kartesius. Misalnya, untuk menemukan matriks yang melakukan rotasi atau transformasi lainnya, kita cukup melihat bagaimana setiap sudut persegi satuan ditransformasikan dan menggunakan informasi tersebut untuk menentukan kolom pertama dan kedua matriks transformasi.
 
-Misalnya, pada contoh **5.1.12**, kita diminta untuk menemukan matriks yang melakukan refleksi bidang Kartesius terhadap sumbu-x dan kemudian melakukan peregangan horizontal dengan faktor dua. Pertama, kita mempertimbangkan sudut persegi satuan vektor = \begin{bmatrix} 1 \\ 0 \end{bmatrix}\). Setelah refleksi terhadap sumbu-x, titik ini akan tetap berada pada posisi yang sama secara horizontal, tetapi dengan transformasi yang dilakukan pada posisi vertikalnya. Dengan demikian, melalui pemahaman ini, kita dapat menentukan bagaimana matriks \(A\) akan dibentuk untuk melakukan transformasi tersebut.
+#### Langkah 1. Cek Penjumlahan Vektor:
+$T(\vec{u} + \vec{v}) = T((u_1 + v_1, u_2 + v_2)) = ((u_1 + v_1) + (u_2 + v_2), u_1 + v_1) =
+(u_1 + u_2 + v_1 + v_2, u_1 + v_1)$
 
-Secara keseluruhan, dengan mengetahui bagaimana sudut-sudut tertentu dari persegi satuan ditransformasikan, kita dapat dengan mudah menemukan matriks yang melakukan transformasi pada seluruh bidang Kartesius.
+Sementara:
+$T(\vec{u}) = (u_1 + u_2, u_1), \ T(\vec{v}) = (v_1 + v_2, v_1)$
 
-Pada contoh **5.1.19**, kita diminta untuk menemukan matriks **A** yang melakukan serangkaian transformasi pada bidang Kartesius secara berurutan, yaitu shear vertikal dengan faktor 0,5, rotasi berlawanan arah jarum jam sebesar 30° tentang asal, peregangan horizontal dengan faktor 2, dan refleksi diagonal terhadap garis **y = x**. Untuk melakukan ini, pertama-tama kita menemukan matriks untuk masing-masing transformasi. Matriks shear vertikal adalah **A1**, matriks rotasi adalah **A2**, matriks peregangan horizontal adalah **A3**, dan matriks refleksi diagonal adalah **A4**. Kemudian, kita mengalikan matriks-matriks tersebut dalam urutan **A = A4A3A2A1** untuk mendapatkan matriks yang mewakili transformasi gabungan. Proses ini menunjukkan bagaimana kita bisa melakukan transformasi kompleks dengan hanya mengalikan beberapa matriks dasar yang sudah diketahui. Dalam hal ini, perkalian matriks memberikan hasil yang sesuai dengan urutan operasi yang dilakukan, dan dengan demikian memungkinkan kita untuk mengetahui posisi akhir suatu vektor setelah transformasi. Gambar **5.1.20** dan **5.1.21** memperlihatkan hasil transformasi pada persegi satuan dan bentuk lainnya. Meskipun transformasi ini tampak rumit, jika kita memahami matriks dasar untuk setiap transformasi, melakukan transformasi kompleks pada bidang Kartesius menjadi lebih mudah, karena semuanya dapat diselesaikan dengan perkalian matriks secara sistematis.
+$T(\vec{u}) + T(\vec{v}) = (u_1 + u_2 + v_1 + v_2, u_1 + v_1)$
+
+Hasilnya sama, jadi penjumlahan vektor terpenuhi.
+
+#### Langkah 2. Cek Perkalian Skalar:
+$T(c \vec{v}) = T((c v_1, c v_2)) = (c v_1 + c v_2, c v_1) = c(v_1 + v_2, v_1) = cT(\vec{v})$
+Jadi, perkalian skalar juga terpenuhi.
+
+## Kesimpulannya:
+Karena kedua sifat tersebut terpenuhi, maka $T(v_1, v_2) = (v_1 + v_2, v_1)$ adalah transformasi linier.
+
+
+
+# Tugas 2
+
+### 1. Reflection about the x-axis
+
+Matriks:
+$\begin{bmatrix}
+1 & 0 \\
+0 & -1
+\end{bmatrix}$
+
+Transformasi: $(x, y) \to (x, -y)$
+
+Contoh:
+$(2, 3) \to (2, -3)$
+$(-1, 5) \to (-1, -5)$
+
+<iframe scrolling="no" title="NO 1" src="https://www.geogebra.org/material/iframe/id/ff2cawzj/width/1280/height/537/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1280px" height="537px" style="border:0px;"> </iframe>
+
+
+### 2. Reflection about the y-axis
+
+Matriks:
+
+$\begin{bmatrix}
+-1 & 0 \\
+0 & 1
+\end{bmatrix}$
+
+Transformasi: $(x, y) \to (-x, y)$
+
+Contoh:
+$(4, -2) \to (-4, -2)$
+
+$(1, 7) \to (-1, 7)$
+
+<iframe scrolling="no" title="NO 2" src="https://www.geogebra.org/material/iframe/id/k2npymsf/width/1280/height/537/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1280px" height="537px" style="border:0px;"> </iframe>
+
+### 3. Reflection about the line \( y = x \)
+
+Matriks:
+
+$\begin{bmatrix}
+0 & 1 \\
+1 & 0
+\end{bmatrix}$
+
+Transformasi:  $(x, y) \to (y, x)$ 
+
+Contoh
+$(5, 2) \to (2, 5)$
+
+$(-3, 7) \to (7, -3)$
+
+<iframe scrolling="no" title="NO 3" src="https://www.geogebra.org/material/iframe/id/fztvnyzj/width/1280/height/537/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1280px" height="537px" style="border:0px;"> </iframe>
+
+### 4. Reflection about the line \( y = -x \)
+
+Matriks:
+$\begin{bmatrix}
+0 & -1 \\
+-1 & 0
+\end{bmatrix}$
+
+
+Transformasi: $(x, y) \to (-y, -x)$ 
+
+Contoh:
+
+$(3, 4) \to (-4, -3)$
+
+$(-5, 1) \to (-1, 5)$
+
+<iframe scrolling="no" title="NO 4" src="https://www.geogebra.org/material/iframe/id/bkwzhfsd/width/1280/height/537/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1280px" height="537px" style="border:0px;"> </iframe>
+
+### 5. Reflection about the origin
+
+Matriks:
+$\begin{bmatrix}
+-1 & 0 \\
+0 & -1
+\end{bmatrix}$
+
+
+Transformasi: $(x, y) \to (-x, -y)$
+
+Contoh:
+
+$(2, -6) \to (-2, 6)$
+
+$(-4, 3) \to (4, -3)$
+
+<iframe scrolling="no" title="NO 5 nw" src="https://www.geogebra.org/material/iframe/id/pttxjac4/width/1280/height/537/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1280px" height="537px" style="border:0px;"> </iframe>
