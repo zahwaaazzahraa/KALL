@@ -62,7 +62,7 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks';</script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="&lt;no title&gt;" href="markdown-notebooks.html" />
+    <link rel="next" title="Tugas 1" href="markdown-notebooks.html" />
     <link rel="prev" title="&lt;no title&gt;" href="markdown.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -183,6 +183,16 @@
         </ul>
         <ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">Pengertian Sistem Persamaan Linier</a></li>
+
+
+
+
+
+
+
+
+<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Tugas 1</a></li>
+
 </ul>
 
     </div>
@@ -378,6 +388,7 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Pengertian Sistem Persamaan Linier</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-spl">Tugas SPL</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-menyusun-matriks-augmented">Langkah 1: Menyusun Matriks Augmented</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-menggunakan-operasi-baris-elementer">Langkah 2: Menggunakan Operasi Baris Elementer</a></li>
@@ -389,6 +400,68 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Diketahui:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Diketahui:</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi">Refleksi</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repleksi-pada-2d-dua-dimensi">✅ <strong>Repleksi pada 2D (dua dimensi)</strong>:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repleksi-pada-3d-tiga-dimensi">✅ ** Repleksi pada 3D (tiga dimensi)**:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi-refleksi-matriks">🔧 <strong>Aplikasi Refleksi Matriks</strong>:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latihan">Latihan</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrik-geser-shear-matrix">Matrik Geser ( Shear Matrix)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrik-geser-pada-2d">Matrik Geser pada 2D:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi">Aplikasi:</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrik-rotasi">Matrik Rotasi</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-rotasi-pada-2d">✅  <strong>Matriks Rotasi pada 2D</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-rotasi-pada-3d">✅  <strong>Matriks Rotasi pada 3D</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi-matriks-rotasi">🛠️ <strong>Aplikasi Matriks Rotasi:</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#komposisi-transformasi">Komposisi transformasi</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-dan-komposisi">Matriks dan Komposisi:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-komposisi-transformasi">Contoh Komposisi Transformasi:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi-dalam-dunia-nyata">Aplikasi dalam Dunia Nyata:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Latihan</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrik-translasi">Matrik Translasi</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-translasi-pada-2d">✅ <strong>Matriks Translasi pada 2D</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-translasi-pada-3d">✅ <strong>Matriks Translasi pada 3D</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi-matriks-translasi">✅ <strong>Aplikasi Matriks Translasi:</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eigenvalue-dan-eigenvector">Definisi Eigenvalue dan Eigenvector</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvalue-nilai-eigen">🔹Eigenvalue (nilai eigen)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvector-vector-eigen">🔹Eigenvector (vector eigen)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan:</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvalue-seberapa-besar-vektor-itu-berubah-panjangnya-skalanya">🔹Eigenvalue : seberapa besar vektor itu berubah panjangnya (skalanya)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvector-arah-yang-tetap-saat-suatu-transformasi-bekerja">🔹Eigenvector : arah yang tetap saat suatu transformasi bekerja</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-mencari-eigenvalue-dan-eigenvector">Langkah-Langkah Mencari Eigenvalue dan Eigenvector</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-mencari-eigenvalue-nilai-eigen">Langkah 1 : Mencari Eigenvalue (Nilai Eigen)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-mencari-eigenvector">Langkah 2 : Mencari Eigenvector</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-lambda-5">💠Untuk <span class="math notranslate nohighlight">\(\lambda\)</span> = 5:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-lambda-2">💠Untuk <span class="math notranslate nohighlight">\(\lambda\)</span> = 2:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">Hasil Akhir:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eigenvector-ortonormal-menjadikan-eigenvector-satu-kesatuan">Definisi Eigenvector Ortonormal menjadikan Eigenvector Satu Kesatuan</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvector">1. Eigenvector</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ortonormalitas">2. Ortonormalitas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvector-ortonormal">3. Eigenvector Ortonormal</a></li>
+</ul>
+</li>
+</ul>
+
             </nav>
         </div>
     </div>
@@ -503,6 +576,1004 @@ x + y + z &amp;= 6 \\
 <p>Berikut tampilan grafis nya: <iframe scrolling="no" title="tidak ada solusi" src="https://www.geogebra.org/material/iframe/id/ahuuzn7a/width/1280/height/537/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="1280px" height="537px" style="border:0px;"> </iframe></p>
 </section>
 </section>
+<section class="tex2jax_ignore mathjax_ignore" id="refleksi">
+<h1>Refleksi<a class="headerlink" href="#refleksi" title="Link to this heading">#</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">pi</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="n">cos</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">titik</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">],[</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">1.5</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>
+<span class="n">koordinats</span> <span class="o">=</span> <span class="n">titik</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">koordinats</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">koordinats</span><span class="p">[</span><span class="mi">1</span><span class="p">,:]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>Refleksi matriks</strong> (reflection matrix) adalah <strong>matriks transformasi</strong> yang mencerminkan (memantulkan) titik-titik dalam ruang terhadap <strong>sumbu, garis, bidang, atau titik tertentu</strong>.</p>
+<p>Refleksi mengubah arah satu atau lebih komponen vektor, seperti bayangan di cermin.</p>
+<hr class="docutils" />
+<section id="repleksi-pada-2d-dua-dimensi">
+<h2>✅ <strong>Repleksi pada 2D (dua dimensi)</strong>:<a class="headerlink" href="#repleksi-pada-2d-dua-dimensi" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p><strong>Refleksi terhadap sumbu-x</strong>:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 0 \\
+0 &amp; -1
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y
+\end{bmatrix}
+=
+\begin{bmatrix}
+x \\
+-y
+\end{bmatrix}
+\end{split}\]</div>
+<p>→ Membalik titik terhadap sumbu-x (nilai y dibalik, x tetap).</p>
+<ol class="arabic simple" start="2">
+<li><p><strong>Refleksi terhadap sumbu-y</strong>:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+-1 &amp; 0 \\
+0 &amp; 1
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y
+\end{bmatrix}
+=
+\begin{bmatrix}
+-x \\
+y
+\end{bmatrix}
+\end{split}\]</div>
+<p>→ Membalik titik terhadap sumbu-y.</p>
+<ol class="arabic simple" start="3">
+<li><p><strong>Refleksi terhadap garis y = x</strong>:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+0 &amp; 1 \\
+1 &amp; 0
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y
+\end{bmatrix}
+=
+\begin{bmatrix}
+y \\
+x
+\end{bmatrix}
+\end{split}\]</div>
+<p>→ Menukar posisi x dan y.</p>
+<hr class="docutils" />
+</section>
+<section id="repleksi-pada-3d-tiga-dimensi">
+<h2>✅ ** Repleksi pada 3D (tiga dimensi)**:<a class="headerlink" href="#repleksi-pada-3d-tiga-dimensi" title="Link to this heading">#</a></h2>
+<p>Refleksi bisa dilakukan terhadap bidang seperti <span class="math notranslate nohighlight">\(x=0\)</span>, <span class="math notranslate nohighlight">\(y=0\)</span>, atau <span class="math notranslate nohighlight">\(z=0\)</span>. Contoh refleksi terhadap bidang <span class="math notranslate nohighlight">\(x=0\)</span>:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+-1 &amp; 0 &amp; 0 \\
+0 &amp; 1 &amp; 0 \\
+0 &amp; 0 &amp; 1
+\end{bmatrix}
+\end{split}\]</div>
+<hr class="docutils" />
+</section>
+<section id="aplikasi-refleksi-matriks">
+<h2>🔧 <strong>Aplikasi Refleksi Matriks</strong>:<a class="headerlink" href="#aplikasi-refleksi-matriks" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Grafika komputer (cermin objek)</p></li>
+<li><p>Geometri transformasi</p></li>
+<li><p>Simulasi fisika (pantulan)</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Titik-titik asal</span>
+<span class="n">koordinats</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span>
+                       <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.5</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
+
+<span class="n">x</span> <span class="o">=</span> <span class="n">koordinats</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">koordinats</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:]</span>
+
+<span class="c1"># Matriks Refleksi terhadap sumbu Y</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
+
+<span class="n">B_trans</span> <span class="o">=</span> <span class="n">B</span> <span class="o">@</span> <span class="n">koordinats</span>
+
+<span class="n">x_LT2</span> <span class="o">=</span> <span class="n">B_trans</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:]</span>
+<span class="n">y_LT2</span> <span class="o">=</span> <span class="n">B_trans</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:]</span>
+
+<span class="c1"># Membuat gambar</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="c1"># Titik-titik asal (merah) dan bayangan (biru)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;ro&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_LT2</span><span class="p">,</span> <span class="n">y_LT2</span><span class="p">,</span> <span class="s1">&#39;bo&#39;</span><span class="p">)</span>
+
+<span class="c1"># Garis penghubung</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_LT2</span><span class="p">,</span> <span class="n">y_LT2</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">)</span>
+
+<span class="c1"># Sumbu</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;:&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;:&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.5</span><span class="p">,</span> <span class="mf">1.5</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Refleksi terhadap sumbu Y&quot;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/b312db74130f8911c39e9f7dd7bea1e451ec58d0b2094801a2501f533f2ad85d.png" src="_images/b312db74130f8911c39e9f7dd7bea1e451ec58d0b2094801a2501f533f2ad85d.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Titik-titik asal (domain)</span>
+<span class="n">koordinats</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">koordinats</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">koordinats</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:]</span>
+
+<span class="c1"># Matriks refleksi terhadap sumbu X</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
+<span class="n">B_trans</span> <span class="o">=</span> <span class="n">B</span> <span class="o">@</span> <span class="n">koordinats</span>
+<span class="n">x_LT2</span> <span class="o">=</span> <span class="n">B_trans</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:]</span>
+<span class="n">y_LT2</span> <span class="o">=</span> <span class="n">B_trans</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:]</span>
+
+<span class="c1"># Membuat gambar dan sumbu-sumbu</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="c1"># Plot titik-titik</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;ro&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Asal (domain)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_LT2</span><span class="p">,</span> <span class="n">y_LT2</span><span class="p">,</span> <span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Bayangan (codomain)&#39;</span><span class="p">)</span>
+
+<span class="c1"># Menghubungkan titik-</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;r--&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_LT2</span><span class="p">,</span> <span class="n">y_LT2</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">)</span>
+
+<span class="c1"># Gambar sumbu-sumbu</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;:&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;:&quot;</span><span class="p">)</span>
+
+<span class="c1"># Properti plot</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Refleksi terhadap sumbu X&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/156aaa6ec5ee44e690619e702d242c648ff66dde6502f1f44102828a6cef625e.png" src="_images/156aaa6ec5ee44e690619e702d242c648ff66dde6502f1f44102828a6cef625e.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Titik-titik asal (domain)</span>
+<span class="n">koordinats</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]])</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">koordinats</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">koordinats</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:]</span>
+
+<span class="c1"># Matriks refleksi terhadap garis y = x</span>
+<span class="n">B</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+              <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]])</span>
+<span class="n">B_trans</span> <span class="o">=</span> <span class="n">B</span> <span class="o">@</span> <span class="n">koordinats</span>
+<span class="n">x_LT2</span> <span class="o">=</span> <span class="n">B_trans</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:]</span>
+<span class="n">y_LT2</span> <span class="o">=</span> <span class="n">B_trans</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:]</span>
+
+<span class="c1"># Membuat gambar dan sumbu-sumbu</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="c1"># Plot titik-titik</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;ro&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Asal (domain)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_LT2</span><span class="p">,</span> <span class="n">y_LT2</span><span class="p">,</span> <span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Bayangan (codomain)&#39;</span><span class="p">)</span>
+
+<span class="c1"># Menghubungkan titik-titik asal dan bayangan</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">x_LT2</span><span class="p">[</span><span class="n">i</span><span class="p">]],</span> <span class="p">[</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">y_LT2</span><span class="p">[</span><span class="n">i</span><span class="p">]],</span> <span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+
+<span class="c1"># Gambar garis y = x</span>
+<span class="n">t</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="n">t</span><span class="p">,</span> <span class="s1">&#39;g--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Garis y = x&#39;</span><span class="p">)</span>
+
+<span class="c1"># Gambar sumbu-sumbu</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;:&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s2">&quot;:&quot;</span><span class="p">)</span>
+
+<span class="c1"># Properti plot</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Refleksi terhadap garis y = x&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/360c1db347bb5008298ee4328a4fe2deeb7bd26990fa1f0b4a574f858b5d6906.png" src="_images/360c1db347bb5008298ee4328a4fe2deeb7bd26990fa1f0b4a574f858b5d6906.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Titik-titik asal (domain)</span>
+<span class="n">koordinats</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]])</span>  <span class="c1"># Contoh titik</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">koordinats</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">koordinats</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:]</span>
+
+<span class="c1"># Hitung bayangan terhadap garis x = 2</span>
+<span class="n">x_reflected</span> <span class="o">=</span> <span class="mi">4</span> <span class="o">-</span> <span class="n">x</span>  <span class="c1"># x&#39; = 2*2 - x</span>
+<span class="n">y_reflected</span> <span class="o">=</span> <span class="n">y</span>      <span class="c1"># y tetap</span>
+
+<span class="c1"># Visualisasi</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="c1"># Titik asal dan bayangan</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;ro&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Asal (domain)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_reflected</span><span class="p">,</span> <span class="n">y_reflected</span><span class="p">,</span> <span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Bayangan (codomain)&#39;</span><span class="p">)</span>
+
+<span class="c1"># Hubungkan titik asal dan bayangan</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">x_reflected</span><span class="p">[</span><span class="n">i</span><span class="p">]],</span> <span class="p">[</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">y_reflected</span><span class="p">[</span><span class="n">i</span><span class="p">]],</span> <span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+
+<span class="c1"># Gambar garis refleksi x = 2</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;x = 2&#39;</span><span class="p">)</span>
+
+<span class="c1"># Gambar sumbu</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+
+<span class="c1"># Pengaturan tampilan</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="mi">0</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Refleksi terhadap garis x = 2&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/2d07bf2e06f63b3b0bd82bc99bf72895a51d91c19b88ca68119bdd2a92d889a7.png" src="_images/2d07bf2e06f63b3b0bd82bc99bf72895a51d91c19b88ca68119bdd2a92d889a7.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Titik-titik asal (domain)</span>
+<span class="n">koordinats</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">koordinats</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">koordinats</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:]</span>
+
+<span class="c1"># Langkah 1: Translasi ke bawah sejauh 2 (y -&gt; y - 2)</span>
+<span class="n">T_down</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+                   <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">2</span><span class="p">],</span>
+                   <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
+
+<span class="c1"># Langkah 2: Refleksi terhadap sumbu X</span>
+<span class="n">Reflect_X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+                      <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+                      <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
+
+<span class="c1"># Langkah 3: Translasi ke atas sejauh 2 (y -&gt; y + 2)</span>
+<span class="n">T_up</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+                 <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span>
+                 <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
+
+<span class="c1"># Gabungkan semua transformasi (T_up @ Reflect_X @ T_down)</span>
+<span class="n">Transform</span> <span class="o">=</span> <span class="n">T_up</span> <span class="o">@</span> <span class="n">Reflect_X</span> <span class="o">@</span> <span class="n">T_down</span>
+
+<span class="c1"># Ubah koordinat ke bentuk homogen (3xN)</span>
+<span class="n">homogen</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">koordinats</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ones</span><span class="p">((</span><span class="mi">1</span><span class="p">,</span> <span class="n">koordinats</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">1</span><span class="p">]))))</span>
+
+<span class="c1"># Lakukan transformasi</span>
+<span class="n">transformed</span> <span class="o">=</span> <span class="n">Transform</span> <span class="o">@</span> <span class="n">homogen</span>
+<span class="n">x_LT</span> <span class="o">=</span> <span class="n">transformed</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:]</span>
+<span class="n">y_LT</span> <span class="o">=</span> <span class="n">transformed</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:]</span>
+
+<span class="c1"># Visualisasi</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;ro&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Asal (domain)&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_LT</span><span class="p">,</span> <span class="n">y_LT</span><span class="p">,</span> <span class="s1">&#39;bo&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Bayangan (codomain)&#39;</span><span class="p">)</span>
+
+<span class="c1"># Hubungkan tiap titik asal ke bayangannya</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">shape</span><span class="p">[</span><span class="mi">0</span><span class="p">]):</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">([</span><span class="n">x</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">x_LT</span><span class="p">[</span><span class="n">i</span><span class="p">]],</span> <span class="p">[</span><span class="n">y</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">y_LT</span><span class="p">[</span><span class="n">i</span><span class="p">]],</span> <span class="s1">&#39;gray&#39;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+
+<span class="c1"># Garis refleksi y = 2</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s1">&#39;--&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;y = 2&#39;</span><span class="p">)</span>
+
+<span class="c1"># Sumbu-sumbu</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="n">ls</span><span class="o">=</span><span class="s1">&#39;:&#39;</span><span class="p">)</span>
+
+<span class="c1"># Properti plot</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Refleksi terhadap garis y = 2&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/39c32073a9bc4428febcf9136f5a2ce846f880cd360e4dd4e5dda0217a669bfb.png" src="_images/39c32073a9bc4428febcf9136f5a2ce846f880cd360e4dd4e5dda0217a669bfb.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">mpl_toolkits.mplot3d</span> <span class="kn">import</span> <span class="n">Axes3D</span>
+
+<span class="c1"># Titik-titik objek asli (misalnya, segitiga 3D)</span>
+<span class="n">points</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span>
+    <span class="p">[</span><span class="mf">1.5</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="p">])</span><span class="o">.</span><span class="n">T</span>  <span class="c1"># bentuknya 3xN</span>
+
+<span class="c1"># Matriks refleksi terhadap bidang x = 0</span>
+<span class="n">reflection_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span>
+    <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+    <span class="p">[</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">],</span>
+    <span class="p">[</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span>
+<span class="p">])</span>
+
+<span class="c1"># Lakukan refleksi</span>
+<span class="n">reflected_points</span> <span class="o">=</span> <span class="n">reflection_matrix</span> <span class="o">@</span> <span class="n">points</span>
+
+<span class="c1"># Buat plot</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">()</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">fig</span><span class="o">.</span><span class="n">add_subplot</span><span class="p">(</span><span class="mi">111</span><span class="p">,</span> <span class="n">projection</span><span class="o">=</span><span class="s1">&#39;3d&#39;</span><span class="p">)</span>
+
+<span class="c1"># Gambar objek asli (biru)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">points</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">points</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">points</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s1">&#39;bo-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Asli&#39;</span><span class="p">)</span>
+
+<span class="c1"># Gambar objek setelah refleksi (merah)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">reflected_points</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">reflected_points</span><span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="n">reflected_points</span><span class="p">[</span><span class="mi">2</span><span class="p">],</span> <span class="s1">&#39;ro-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Refleksi&#39;</span><span class="p">)</span>
+
+<span class="c1"># Tambahkan garis bantu bidang x = 0</span>
+<span class="n">x_plane</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+<span class="n">y_plane</span><span class="p">,</span> <span class="n">z_plane</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">))</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot_surface</span><span class="p">(</span><span class="n">x_plane</span><span class="p">,</span> <span class="n">y_plane</span><span class="p">,</span> <span class="n">z_plane</span><span class="p">,</span> <span class="n">alpha</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">)</span>
+
+<span class="c1"># Set aspek dan label</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;X&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Y&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_zlabel</span><span class="p">(</span><span class="s1">&#39;Z&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Refleksi terhadap bidang x = 0&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_box_aspect</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">])</span>  <span class="c1"># aspek rasio 1:1:1</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/226a4210c7bf5edd146a506b5bb8e90784cb521d487ae84b499b339aa91b5fe8.png" src="_images/226a4210c7bf5edd146a506b5bb8e90784cb521d487ae84b499b339aa91b5fe8.png" />
+</div>
+</div>
+</section>
+<section id="latihan">
+<h2>Latihan<a class="headerlink" href="#latihan" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Carilah matriks yang menggambarkan refleksi terhadap sumbu x. Kalikan matrik dengan 4 titik koordinat dan plot hasilnya</p></li>
+<li><p>Carilah matriks yang menggambarkan refleksi terhadap sumbu y= -x. Kalikan matrik dengan 4 titik koordinat dan plot hasilnya</p></li>
+</ol>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="matrik-geser-shear-matrix">
+<h1>Matrik Geser ( Shear Matrix)<a class="headerlink" href="#matrik-geser-shear-matrix" title="Link to this heading">#</a></h1>
+<p><strong>Shear matrix</strong> atau <strong>Matriks geser</strong>. adalah jenis transformasi dalam <strong>aljabar linear</strong> dan <strong>grafika komputer</strong>, yang menggeser satu bagian dari objek ke arah tertentu tanpa mengubah volumenya.</p>
+<p>Matriks shear “mendorong” titik-titik dalam suatu arah (biasanya horizontal atau vertikal), sedangkan titik-titik lain tetap relatif pada sumbu tertentu.</p>
+<section id="matrik-geser-pada-2d">
+<h2>Matrik Geser pada 2D:<a class="headerlink" href="#matrik-geser-pada-2d" title="Link to this heading">#</a></h2>
+<p>Misalkan kita punya titik <span class="math notranslate nohighlight">\((x, y)\)</span>. Jika kita terapkan <strong>shear horizontal</strong>, maka titiknya berubah menjadi:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; k \\
+0 &amp; 1
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y
+\end{bmatrix}
+=
+\begin{bmatrix}
+x + ky \\
+y
+\end{bmatrix}
+\end{split}\]</div>
+<p>Artinya, sumbu-x digeser sebanding dengan nilai y (terjadi “kemiringan” arah horizontal).</p>
+<p>Jika shear vertikal:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+1 &amp; 0 \\
+k &amp; 1
+\end{bmatrix}
+\begin{bmatrix}
+x \\
+y
+\end{bmatrix}
+=
+\begin{bmatrix}
+x \\
+y + kx
+\end{bmatrix}
+\end{split}\]</div>
+</section>
+<section id="aplikasi">
+<h2>Aplikasi:<a class="headerlink" href="#aplikasi" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Dalam <strong>grafika komputer</strong> untuk menciptakan efek distorsi</p></li>
+<li><p>Dalam <strong>mekanika</strong> untuk menggambarkan deformasi material</p></li>
+<li><p>Dalam <strong>transformasi geometris</strong>  computer vision</p></li>
+</ul>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">pi</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="n">cos</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">titik</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">],[</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">1.5</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>
+<span class="n">koordinats</span> <span class="o">=</span> <span class="n">titik</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">koordinats</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">koordinats</span><span class="p">[</span><span class="mi">1</span><span class="p">,:]</span>
+
+
+<span class="n">S</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]])</span>
+<span class="n">S_coords</span> <span class="o">=</span> <span class="n">S</span><span class="nd">@koordinats</span>
+
+<span class="n">x_LT4</span> <span class="o">=</span> <span class="n">S_coords</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span>
+<span class="n">y_LT4</span> <span class="o">=</span> <span class="n">S_coords</span><span class="p">[</span><span class="mi">1</span><span class="p">,:]</span>
+
+
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="s1">&#39;ro&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_LT4</span><span class="p">,</span><span class="n">y_LT4</span><span class="p">,</span><span class="s1">&#39;bo&#39;</span><span class="p">)</span>
+
+
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_LT4</span><span class="p">,</span><span class="n">y_LT4</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+
+
+<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span><span class="n">ls</span><span class="o">=</span><span class="s2">&quot;:&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span><span class="n">ls</span><span class="o">=</span><span class="s2">&quot;:&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Shear&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/39bda0edbb894a661383cc05a001acf793a0113f0e5d8b57f19c19699509d3f5.png" src="_images/39bda0edbb894a661383cc05a001acf793a0113f0e5d8b57f19c19699509d3f5.png" />
+</div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="matrik-rotasi">
+<h1>Matrik Rotasi<a class="headerlink" href="#matrik-rotasi" title="Link to this heading">#</a></h1>
+<p><strong>Matriks rotasi</strong> adalah <strong>matriks transformasi linier</strong> yang digunakan untuk <strong>memutar vektor atau objek</strong> di ruang 2D, 3D, atau lebih tinggi <strong>tanpa mengubah bentuk atau ukurannya</strong>.</p>
+<hr class="docutils" />
+<p>Matriks rotasi memutar titik atau objek <strong>sekitar asal (0,0)</strong> atau sumbu tertentu, dengan <strong>sudut tertentu</strong> (biasanya dalam radian atau derajat).</p>
+<hr class="docutils" />
+<section id="matriks-rotasi-pada-2d">
+<h2>✅  <strong>Matriks Rotasi pada 2D</strong><a class="headerlink" href="#matriks-rotasi-pada-2d" title="Link to this heading">#</a></h2>
+<p>Untuk memutar vektor sebesar sudut <span class="math notranslate nohighlight">\(\theta\)</span> terhadap titik asal dalam bidang 2D:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+R(\theta) =
+\begin{bmatrix}
+\cos\theta &amp; -\sin\theta \\
+\sin\theta &amp; \cos\theta
+\end{bmatrix}
+\end{split}\]</div>
+<p>Jika kamu punya titik <span class="math notranslate nohighlight">\((x, y)\)</span>, maka hasil rotasinya:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+x' \\
+y'
+\end{bmatrix}
+=
+R(\theta) \cdot
+\begin{bmatrix}
+x \\
+y
+\end{bmatrix}
+\end{split}\]</div>
+</section>
+<hr class="docutils" />
+<section id="matriks-rotasi-pada-3d">
+<h2>✅  <strong>Matriks Rotasi pada 3D</strong><a class="headerlink" href="#matriks-rotasi-pada-3d" title="Link to this heading">#</a></h2>
+<p>Di 3D, rotasi bisa dilakukan terhadap sumbu X, Y, atau Z.</p>
+<ol class="arabic simple">
+<li><p><strong>Rotasi terhadap sumbu X (dengan sudut <span class="math notranslate nohighlight">\(\theta\)</span>)</strong>:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+R_x(\theta) =
+\begin{bmatrix}
+1 &amp; 0 &amp; 0 \\
+0 &amp; \cos\theta &amp; -\sin\theta \\
+0 &amp; \sin\theta &amp; \cos\theta
+\end{bmatrix}
+\end{split}\]</div>
+<ol class="arabic simple" start="2">
+<li><p><strong>Rotasi terhadap sumbu Y</strong>:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+R_y(\theta) =
+\begin{bmatrix}
+\cos\theta &amp; 0 &amp; \sin\theta \\
+0 &amp; 1 &amp; 0 \\
+-\sin\theta &amp; 0 &amp; \cos\theta
+\end{bmatrix}
+\end{split}\]</div>
+<ol class="arabic simple" start="3">
+<li><p><strong>Rotasi terhadap sumbu Z</strong>:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+R_z(\theta) =
+\begin{bmatrix}
+\cos\theta &amp; -\sin\theta &amp; 0 \\
+\sin\theta &amp; \cos\theta &amp; 0 \\
+0 &amp; 0 &amp; 1
+\end{bmatrix}
+\end{split}\]</div>
+</section>
+<hr class="docutils" />
+<section id="aplikasi-matriks-rotasi">
+<h2>🛠️ <strong>Aplikasi Matriks Rotasi:</strong><a class="headerlink" href="#aplikasi-matriks-rotasi" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Grafika komputer (animasi, rotasi objek)</p></li>
+<li><p>Robotika (pergerakan lengan robot)</p></li>
+<li><p>Pemrosesan citra (rotasi gambar)</p></li>
+<li><p>Navigasi (GPS, drone, pesawat)</p></li>
+<li><p>Ilmu data spasial dan geometri</p></li>
+</ul>
+<hr class="docutils" />
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> inline
+<span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">pi</span><span class="p">,</span> <span class="n">sin</span><span class="p">,</span> <span class="n">cos</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="n">titik</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],[</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">0.5</span><span class="p">],[</span><span class="mf">0.5</span><span class="p">,</span><span class="mf">1.5</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]])</span>
+<span class="n">koordinats</span> <span class="o">=</span> <span class="n">titik</span><span class="o">.</span><span class="n">transpose</span><span class="p">()</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">koordinats</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">koordinats</span><span class="p">[</span><span class="mi">1</span><span class="p">,:]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">theta</span> <span class="o">=</span> <span class="n">pi</span><span class="o">/</span><span class="mi">6</span>
+<span class="n">R</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">),</span><span class="o">-</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">)],[</span><span class="n">sin</span><span class="p">(</span><span class="n">theta</span><span class="p">),</span><span class="n">cos</span><span class="p">(</span><span class="n">theta</span><span class="p">)]])</span>
+<span class="n">R_koordinats</span> <span class="o">=</span> <span class="n">R</span><span class="nd">@koordinats</span>
+
+<span class="n">x_LT3</span> <span class="o">=</span> <span class="n">R_koordinats</span><span class="p">[</span><span class="mi">0</span><span class="p">,:]</span>
+<span class="n">y_LT3</span> <span class="o">=</span> <span class="n">R_koordinats</span><span class="p">[</span><span class="mi">1</span><span class="p">,:]</span>
+
+<span class="c1"># membuat gambar</span>
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">()</span>
+
+<span class="c1"># ploting titik titik.  x dan y adalah vektor asal (domain), x_LT1 dab y_LT1 adalah bayangan (codomain)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="s1">&#39;ro&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_LT3</span><span class="p">,</span><span class="n">y_LT3</span><span class="p">,</span><span class="s1">&#39;bo&#39;</span><span class="p">)</span>
+
+<span class="c1"># menghubungkan titik dengan baris</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="s1">&#39;r&#39;</span><span class="p">,</span><span class="n">ls</span><span class="o">=</span><span class="s2">&quot;--&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_LT3</span><span class="p">,</span><span class="n">y_LT3</span><span class="p">,</span><span class="s1">&#39;b&#39;</span><span class="p">)</span>
+
+<span class="c1"># menggambar sumbu sumbu koordinat</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span><span class="n">ls</span><span class="o">=</span><span class="s2">&quot;:&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">color</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">,</span><span class="n">ls</span><span class="o">=</span><span class="s2">&quot;:&quot;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">axis</span><span class="p">([</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_aspect</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s2">&quot;Rotasi&quot;</span><span class="p">);</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/cf62285182dd659559f61cee18ed1cdaea76affbed059c4f21938127de6f4fad.png" src="_images/cf62285182dd659559f61cee18ed1cdaea76affbed059c4f21938127de6f4fad.png" />
+</div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="komposisi-transformasi">
+<h1>Komposisi transformasi<a class="headerlink" href="#komposisi-transformasi" title="Link to this heading">#</a></h1>
+<p><strong>Komposisi transformasi</strong> (Composition of Transformations) adalah proses <strong>menggabungkan dua atau lebih transformasi</strong> geometris (seperti translasi, rotasi, refleksi, dan dilatasi) menjadi satu transformasi yang lebih kompleks.</p>
+<p>Dalam komposisi transformasi, <strong>transformasi pertama</strong> diterapkan terlebih dahulu, dan kemudian <strong>transformasi kedua</strong> diterapkan pada hasil dari transformasi pertama. Jika lebih dari dua transformasi, proses ini dilakukan secara berurutan.</p>
+<p>Misalnya, jika kita memiliki dua transformasi:</p>
+<ol class="arabic simple">
+<li><p><span class="math notranslate nohighlight">\(T_1\)</span> (seperti rotasi)</p></li>
+<li><p><span class="math notranslate nohighlight">\(T_2\)</span> (seperti translasi)</p></li>
+</ol>
+<p>Maka komposisi transformasi <span class="math notranslate nohighlight">\(T_1 \circ T_2\)</span> berarti:</p>
+<ol class="arabic simple">
+<li><p>Terlebih dahulu <strong>aplikasikan <span class="math notranslate nohighlight">\(T_2\)</span></strong> pada titik atau objek.</p></li>
+<li><p>Setelah itu, <strong>aplikasikan <span class="math notranslate nohighlight">\(T_1\)</span></strong> pada hasil transformasi sebelumnya.</p></li>
+</ol>
+<section id="matriks-dan-komposisi">
+<h2>Matriks dan Komposisi:<a class="headerlink" href="#matriks-dan-komposisi" title="Link to this heading">#</a></h2>
+<p>Jika kita bekerja dengan <strong>matriks transformasi</strong>, komposisi dapat dilakukan dengan <strong>perkalian matriks</strong>. Misalnya, jika <span class="math notranslate nohighlight">\(A\)</span> adalah matriks transformasi pertama dan <span class="math notranslate nohighlight">\(B\)</span> adalah matriks transformasi kedua, maka komposisi transformasi tersebut adalah:</p>
+<div class="math notranslate nohighlight">
+\[
+C = A \times B
+\]</div>
+<p>Dengan catatan:</p>
+<ul class="simple">
+<li><p>Matriks <span class="math notranslate nohighlight">\(A\)</span> diterapkan setelah <span class="math notranslate nohighlight">\(B\)</span>.</p></li>
+<li><p>Urutan perkalian matriks sangat penting, karena perkalian matriks <strong>tidak komutatif</strong> (yaitu <span class="math notranslate nohighlight">\(A \times B \neq B \times A\)</span>).</p></li>
+</ul>
+<hr class="docutils" />
+</section>
+<section id="contoh-komposisi-transformasi">
+<h2>Contoh Komposisi Transformasi:<a class="headerlink" href="#contoh-komposisi-transformasi" title="Link to this heading">#</a></h2>
+<p>Misalnya, kita ingin menggabungkan dua transformasi:</p>
+<ol class="arabic simple">
+<li><p><strong>Rotasi 90°</strong> terhadap titik asal.</p></li>
+<li><p><strong>Translasi (geser) 5 satuan ke kanan dan 3 satuan ke atas.</strong></p></li>
+</ol>
+<p>Langkah-langkah:</p>
+<ol class="arabic">
+<li><p><strong>Rotasi</strong>: Matriks rotasi 90°:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   R =
+   \begin{bmatrix}
+   0 &amp; -1 \\
+   1 &amp; 0
+   \end{bmatrix}
+   \end{split}\]</div>
+</li>
+<li><p><strong>Translasi</strong>: Matriks translasi 5 satuan ke kanan dan 3 satuan ke atas:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+   T =
+   \begin{bmatrix}
+   1 &amp; 0 &amp; 5 \\
+   0 &amp; 1 &amp; 3 \\
+   0 &amp; 0 &amp; 1
+   \end{bmatrix}
+   \end{split}\]</div>
+</li>
+</ol>
+<p>Jika kita komposisikan translasi dan rotasi, kita harus menggabungkan matriks translasi dan rotasi ke dalam satu matriks transformasi. Hasil akhirnya akan memberikan rotasi <strong>diikuti oleh translasi</strong>.</p>
+<hr class="docutils" />
+</section>
+<section id="aplikasi-dalam-dunia-nyata">
+<h2>Aplikasi dalam Dunia Nyata:<a class="headerlink" href="#aplikasi-dalam-dunia-nyata" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Grafika komputer</strong>: Untuk menggambar dan memanipulasi objek 3D (rotasi, translasi, zooming, dll.).</p></li>
+<li><p><strong>Robotika</strong>: Untuk mengarahkan robot melalui serangkaian pergerakan.</p></li>
+<li><p><strong>Geometri</strong>: Untuk mempelajari bentuk dan perubahan posisi dalam ruang.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="id3">
+<h2>Latihan<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<ol class="arabic simple">
+<li><p>Buatlah beberapa operasi  komposisi shear, rotasi dan reflesi  pada 2D untuk titik koordinat (2,2)</p></li>
+<li><p>Buatlah beberapa operasi  komposisi shear, rotasi dan reflesi  pada 2D untuk titik koordinat (2,2) sehingga titik tersebut kembali lagi ke (2,2)</p></li>
+</ol>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="matrik-translasi">
+<h1>Matrik Translasi<a class="headerlink" href="#matrik-translasi" title="Link to this heading">#</a></h1>
+<p><strong>Matriks translasi</strong> adalah matriks yang digunakan untuk <strong>mentranslasi</strong> (menggeser) titik atau objek dalam ruang. Translasi memindahkan titik dengan <strong>jarak tertentu</strong> di sepanjang sumbu tertentu, tanpa mengubah bentuk atau orientasi objek.</p>
+<hr class="docutils" />
+<section id="matriks-translasi-pada-2d">
+<h2>✅ <strong>Matriks Translasi pada 2D</strong><a class="headerlink" href="#matriks-translasi-pada-2d" title="Link to this heading">#</a></h2>
+<p>Dalam ruang dua dimensi (2D), matriks translasi biasanya dituliskan sebagai:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+T =
+\begin{bmatrix}
+1 &amp; 0 &amp; tx \\
+0 &amp; 1 &amp; ty \\
+0 &amp; 0 &amp; 1
+\end{bmatrix}
+\end{split}\]</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(tx\)</span> adalah jarak translasi sepanjang sumbu <strong>x</strong> (horizontal).</p></li>
+<li><p><span class="math notranslate nohighlight">\(ty\)</span> adalah jarak translasi sepanjang sumbu <strong>y</strong> (vertikal).</p></li>
+</ul>
+<p>Jika kita memiliki titik <span class="math notranslate nohighlight">\((x, y)\)</span>, maka hasil translasi menjadi:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+x' \\
+y' \\
+1
+\end{bmatrix}
+=
+T \cdot
+\begin{bmatrix}
+x \\
+y \\
+1
+\end{bmatrix}
+\end{split}\]</div>
+<p>Dimana:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(x' = x + tx\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(y' = y + ty\)</span></p></li>
+</ul>
+<p>Jadi, titik <span class="math notranslate nohighlight">\((x, y)\)</span> akan digeser ke posisi baru <span class="math notranslate nohighlight">\((x + tx, y + ty)\)</span>.</p>
+<hr class="docutils" />
+</section>
+<section id="matriks-translasi-pada-3d">
+<h2>✅ <strong>Matriks Translasi pada 3D</strong><a class="headerlink" href="#matriks-translasi-pada-3d" title="Link to this heading">#</a></h2>
+<p>Untuk translasi di ruang tiga dimensi (3D), matriks translasi dapat dituliskan sebagai:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+T =
+\begin{bmatrix}
+1 &amp; 0 &amp; 0 &amp; tx \\
+0 &amp; 1 &amp; 0 &amp; ty \\
+0 &amp; 0 &amp; 1 &amp; tz \\
+0 &amp; 0 &amp; 0 &amp; 1
+\end{bmatrix}
+\end{split}\]</div>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(tx\)</span>, <span class="math notranslate nohighlight">\(ty\)</span>, dan <span class="math notranslate nohighlight">\(tz\)</span> adalah jarak translasi sepanjang sumbu <strong>x</strong>, <strong>y</strong>, dan <strong>z</strong>.</p></li>
+</ul>
+<p>Jika kita memiliki titik <span class="math notranslate nohighlight">\((x, y, z)\)</span>, maka hasil translasi menjadi:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{bmatrix}
+x' \\
+y' \\
+z' \\
+1
+\end{bmatrix}
+=
+T \cdot
+\begin{bmatrix}
+x \\
+y \\
+z \\
+1
+\end{bmatrix}
+\end{split}\]</div>
+<p>Dimana:</p>
+<ul class="simple">
+<li><p><span class="math notranslate nohighlight">\(x' = x + tx\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(y' = y + ty\)</span></p></li>
+<li><p><span class="math notranslate nohighlight">\(z' = z + tz\)</span></p></li>
+</ul>
+<hr class="docutils" />
+</section>
+<section id="aplikasi-matriks-translasi">
+<h2>✅ <strong>Aplikasi Matriks Translasi:</strong><a class="headerlink" href="#aplikasi-matriks-translasi" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Grafika komputer</strong>: Untuk menggeser objek atau gambar di layar.</p></li>
+<li><p><strong>Robotika</strong>: Untuk memindahkan posisi lengan robot.</p></li>
+<li><p><strong>Geometri</strong>: Untuk memindahkan titik atau bentuk dalam ruang tanpa merubah ukuran atau orientasi.</p></li>
+</ul>
+<hr class="docutils" />
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Titik-titik objek (misalnya segitiga)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">])</span>  <span class="c1"># Koordinat X</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">2</span><span class="p">])</span>  <span class="c1"># Koordinat Y</span>
+
+<span class="c1"># Matriks translasi (misalnya translasi 2 unit ke kanan dan 1 unit ke atas)</span>
+<span class="n">tx</span><span class="p">,</span> <span class="n">ty</span> <span class="o">=</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span>
+<span class="n">translation_matrix</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">tx</span><span class="p">],</span>
+                               <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="n">ty</span><span class="p">],</span>
+                               <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">]])</span>
+
+<span class="c1"># Menambahkan baris 1 untuk koordinat homogen (x, y, 1)</span>
+<span class="n">coordinates</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">vstack</span><span class="p">((</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">ones_like</span><span class="p">(</span><span class="n">x</span><span class="p">)))</span>
+
+<span class="c1"># Menghitung hasil translasi</span>
+<span class="n">translated_coordinates</span> <span class="o">=</span> <span class="n">translation_matrix</span> <span class="o">@</span> <span class="n">coordinates</span>
+
+<span class="c1"># Titik-titik hasil translasi</span>
+<span class="n">x_translated</span> <span class="o">=</span> <span class="n">translated_coordinates</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="p">:]</span>
+<span class="n">y_translated</span> <span class="o">=</span> <span class="n">translated_coordinates</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">:]</span>
+
+<span class="c1"># Plot objek asli dan hasil translasi</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="mi">6</span><span class="p">))</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="s1">&#39;bo-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Objek Asli&#39;</span><span class="p">)</span>  <span class="c1"># Titik objek asli (biru)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x_translated</span><span class="p">,</span> <span class="n">y_translated</span><span class="p">,</span> <span class="s1">&#39;ro-&#39;</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="s1">&#39;Objek Setelah Translasi&#39;</span><span class="p">)</span>  <span class="c1"># Titik objek setelah translasi (merah)</span>
+
+<span class="c1"># Menambahkan label dan judul</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">&#39;X&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">&#39;Y&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">&#39;Matriks Translasi pada Objek 2D&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span><span class="n">linewidth</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">axis</span><span class="p">(</span><span class="s1">&#39;equal&#39;</span><span class="p">)</span>  <span class="c1"># Agar skala X dan Y sama</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="_images/419e23edfae6bf919912573d847fa925c71b82ee38baf490949e9ae8f556a7a0.png" src="_images/419e23edfae6bf919912573d847fa925c71b82ee38baf490949e9ae8f556a7a0.png" />
+</div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="definisi-eigenvalue-dan-eigenvector">
+<h1>Definisi Eigenvalue dan Eigenvector<a class="headerlink" href="#definisi-eigenvalue-dan-eigenvector" title="Link to this heading">#</a></h1>
+<section id="eigenvalue-nilai-eigen">
+<h2>🔹Eigenvalue (nilai eigen)<a class="headerlink" href="#eigenvalue-nilai-eigen" title="Link to this heading">#</a></h2>
+<p>merupakan angka (skalar) yang menunjukkan seberapa besar perubahan panjang dari eigenvector tersebut saat dikalikan dengan matriks.</p>
+</section>
+<section id="eigenvector-vector-eigen">
+<h2>🔹Eigenvector (vector eigen)<a class="headerlink" href="#eigenvector-vector-eigen" title="Link to this heading">#</a></h2>
+<p>merupakan arah tertentu yang tidak berubah saat dikenai transformasi oleh suatu matriks.
+Yang berubah hanyalah panjangnya, bisa jadi lebih panjang, lebih pendek, atau arah berbalik.</p>
+<section id="kesimpulan">
+<h3>Kesimpulan:<a class="headerlink" href="#kesimpulan" title="Link to this heading">#</a></h3>
+<section id="eigenvalue-seberapa-besar-vektor-itu-berubah-panjangnya-skalanya">
+<h4>🔹Eigenvalue : seberapa besar vektor itu berubah panjangnya (skalanya)<a class="headerlink" href="#eigenvalue-seberapa-besar-vektor-itu-berubah-panjangnya-skalanya" title="Link to this heading">#</a></h4>
+</section>
+<section id="eigenvector-arah-yang-tetap-saat-suatu-transformasi-bekerja">
+<h4>🔹Eigenvector : arah yang tetap saat suatu transformasi bekerja<a class="headerlink" href="#eigenvector-arah-yang-tetap-saat-suatu-transformasi-bekerja" title="Link to this heading">#</a></h4>
+</section>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="langkah-langkah-mencari-eigenvalue-dan-eigenvector">
+<h1>Langkah-Langkah Mencari Eigenvalue dan Eigenvector<a class="headerlink" href="#langkah-langkah-mencari-eigenvalue-dan-eigenvector" title="Link to this heading">#</a></h1>
+<p>Misalkan diberikan matriks:
+<span class="math notranslate nohighlight">\(A = \begin{bmatrix}
+4 &amp; 2 \\
+1 &amp; 3
+\end{bmatrix}\)</span></p>
+<section id="langkah-1-mencari-eigenvalue-nilai-eigen">
+<h2>Langkah 1 : Mencari Eigenvalue (Nilai Eigen)<a class="headerlink" href="#langkah-1-mencari-eigenvalue-nilai-eigen" title="Link to this heading">#</a></h2>
+<p>Gunakan persamaan karakteristik:
+<span class="math notranslate nohighlight">\(\text{Cari } \lambda \text{ sehingga } \det(A - \lambda I) = 0\)</span></p>
+<p>Hitung:
+<span class="math notranslate nohighlight">\(A - \lambda I = 
+\begin{bmatrix}
+4 - \lambda &amp; 2 \\
+1 &amp; 3 - \lambda
+\end{bmatrix}\)</span>
+<span class="math notranslate nohighlight">\(\det(A - \lambda I) = (4 - \lambda)(3 - \lambda) - (1)(2)\)</span>
+<span class="math notranslate nohighlight">\(= (12 - 4\lambda - 3\lambda + \lambda^2) - 2
+= \lambda^2 - 7\lambda + 10\)</span></p>
+<p>Faktorkan:
+<span class="math notranslate nohighlight">\(\lambda^2 - 7\lambda + 10 = 0
+(\lambda - 5)(\lambda - 2) = 0\)</span></p>
+<p>Jadi:
+<span class="math notranslate nohighlight">\(\lambda_1 = 5, \quad \lambda_2 = 2\)</span></p>
+</section>
+<section id="langkah-2-mencari-eigenvector">
+<h2>Langkah 2 : Mencari Eigenvector<a class="headerlink" href="#langkah-2-mencari-eigenvector" title="Link to this heading">#</a></h2>
+<p>Untuk setiap <span class="math notranslate nohighlight">\(\lambda\)</span>, cari vektor <span class="math notranslate nohighlight">\(\vec{v}\)</span> yang memenuhi:
+<span class="math notranslate nohighlight">\((A - \lambda I)\vec{v} = \vec{0}\)</span></p>
+<section id="untuk-lambda-5">
+<h3>💠Untuk <span class="math notranslate nohighlight">\(\lambda\)</span> = 5:<a class="headerlink" href="#untuk-lambda-5" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(A - 5I = \begin{bmatrix} 4 - 5 &amp; 1 \\ 2 &amp; 3 - 5 \end{bmatrix} = \begin{bmatrix} -1 &amp; 1 \\ 2 &amp; -2 \end{bmatrix}\)</span></p>
+<p>Persamaan:
+<span class="math notranslate nohighlight">\(-1x + 2y = 0 \Rightarrow x = 2y\)</span></p>
+<p>Ambil <span class="math notranslate nohighlight">\(y = 1 \Rightarrow x = 2\)</span>
+<span class="math notranslate nohighlight">\(\vec{v}_1 = 
+\begin{bmatrix}
+2 \\
+1
+\end{bmatrix}\)</span></p>
+</section>
+<section id="untuk-lambda-2">
+<h3>💠Untuk <span class="math notranslate nohighlight">\(\lambda\)</span> = 2:<a class="headerlink" href="#untuk-lambda-2" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(A - 2I = \begin{bmatrix} 2 &amp; 1 \\ 2 &amp; 1 \end{bmatrix}\)</span></p>
+<p>Persamaan:
+<span class="math notranslate nohighlight">\(2x + 2y = 0 \Rightarrow x = -y\)</span></p>
+<p>Ambil <span class="math notranslate nohighlight">\(y = 1 \Rightarrow x = -1\)</span>
+<span class="math notranslate nohighlight">\(\vec{v}_2 = 
+\begin{bmatrix}
+-1 \\
+1
+\end{bmatrix}\)</span></p>
+</section>
+<section id="hasil-akhir">
+<h3>Hasil Akhir:<a class="headerlink" href="#hasil-akhir" title="Link to this heading">#</a></h3>
+<p><span class="math notranslate nohighlight">\(\lambda_1 = 5, \quad \vec{v}_1 = 
+\begin{bmatrix}
+2 \\
+1
+\end{bmatrix}
+\quad\quad
+\lambda_2 = 2, \quad \vec{v}_2 = 
+\begin{bmatrix}
+-1 \\
+1
+\end{bmatrix}\)</span></p>
+</section>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="definisi-eigenvector-ortonormal-menjadikan-eigenvector-satu-kesatuan">
+<h1>Definisi Eigenvector Ortonormal menjadikan Eigenvector Satu Kesatuan<a class="headerlink" href="#definisi-eigenvector-ortonormal-menjadikan-eigenvector-satu-kesatuan" title="Link to this heading">#</a></h1>
+<section id="eigenvector">
+<h2>1. Eigenvector<a class="headerlink" href="#eigenvector" title="Link to this heading">#</a></h2>
+<p>Vektor <span class="math notranslate nohighlight">\(\vec{v}\)</span> yang memenuhi:
+<span class="math notranslate nohighlight">\(A \mathbf{v} = \lambda \mathbf{v}\)</span> di mana <span class="math notranslate nohighlight">\(\lambda\)</span> adalah eigenvalue. Artinya, eigenvector ini saat dikalikan matriks A, hasilnya hanya berubah skala (panjang) tanpa ubah arah.</p>
+</section>
+<section id="ortonormalitas">
+<h2>2. Ortonormalitas<a class="headerlink" href="#ortonormalitas" title="Link to this heading">#</a></h2>
+<p>Sekumpulan vektor dikatakan ortonormal jika:</p>
+<ul class="simple">
+<li><p>Orto: Semua vektor saling tegak lurus (orthogonal), yaitu hasil dot product dua vektor berbeda adalah nol: <span class="math notranslate nohighlight">\(\mathbf{v}_i \cdot \mathbf{v}_j = 0, \quad i \neq j\)</span></p></li>
+<li><p>Normal: Semua vektor memiliki panjang 1 (norma 1):
+<span class="math notranslate nohighlight">\(\| \mathbf{v}_i \| = 1\)</span></p></li>
+</ul>
+</section>
+<section id="eigenvector-ortonormal">
+<h2>3. Eigenvector Ortonormal<a class="headerlink" href="#eigenvector-ortonormal" title="Link to this heading">#</a></h2>
+<p>Kumpulan eigenvector yang:</p>
+<ul class="simple">
+<li><p>Masing-masing adalah eigenvector dari A</p></li>
+<li><p>Saling tegak lurus (orthogonal)</p></li>
+<li><p>Masing-masing dinormalisasi jadi panjang 1</p></li>
+</ul>
+</section>
+</section>
 
     <script type="text/x-thebe-config">
     {
@@ -548,7 +1619,7 @@ x + y + z &amp;= 6 \\
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">&lt;no title&gt;</p>
+        <p class="prev-next-title">Tugas 1</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -568,6 +1639,7 @@ x + y + z &amp;= 6 \\
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Pengertian Sistem Persamaan Linier</a><ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#tugas-spl">Tugas SPL</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-menyusun-matriks-augmented">Langkah 1: Menyusun Matriks Augmented</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-menggunakan-operasi-baris-elementer">Langkah 2: Menggunakan Operasi Baris Elementer</a></li>
@@ -579,6 +1651,68 @@ x + y + z &amp;= 6 \\
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Diketahui:</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Diketahui:</a></li>
 </ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#refleksi">Refleksi</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repleksi-pada-2d-dua-dimensi">✅ <strong>Repleksi pada 2D (dua dimensi)</strong>:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#repleksi-pada-3d-tiga-dimensi">✅ ** Repleksi pada 3D (tiga dimensi)**:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi-refleksi-matriks">🔧 <strong>Aplikasi Refleksi Matriks</strong>:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#latihan">Latihan</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrik-geser-shear-matrix">Matrik Geser ( Shear Matrix)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matrik-geser-pada-2d">Matrik Geser pada 2D:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi">Aplikasi:</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrik-rotasi">Matrik Rotasi</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-rotasi-pada-2d">✅  <strong>Matriks Rotasi pada 2D</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-rotasi-pada-3d">✅  <strong>Matriks Rotasi pada 3D</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi-matriks-rotasi">🛠️ <strong>Aplikasi Matriks Rotasi:</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#komposisi-transformasi">Komposisi transformasi</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-dan-komposisi">Matriks dan Komposisi:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-komposisi-transformasi">Contoh Komposisi Transformasi:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi-dalam-dunia-nyata">Aplikasi dalam Dunia Nyata:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Latihan</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matrik-translasi">Matrik Translasi</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-translasi-pada-2d">✅ <strong>Matriks Translasi pada 2D</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-translasi-pada-3d">✅ <strong>Matriks Translasi pada 3D</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#aplikasi-matriks-translasi">✅ <strong>Aplikasi Matriks Translasi:</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eigenvalue-dan-eigenvector">Definisi Eigenvalue dan Eigenvector</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvalue-nilai-eigen">🔹Eigenvalue (nilai eigen)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvector-vector-eigen">🔹Eigenvector (vector eigen)</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan:</a><ul class="nav section-nav flex-column">
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvalue-seberapa-besar-vektor-itu-berubah-panjangnya-skalanya">🔹Eigenvalue : seberapa besar vektor itu berubah panjangnya (skalanya)</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvector-arah-yang-tetap-saat-suatu-transformasi-bekerja">🔹Eigenvector : arah yang tetap saat suatu transformasi bekerja</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-langkah-mencari-eigenvalue-dan-eigenvector">Langkah-Langkah Mencari Eigenvalue dan Eigenvector</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-1-mencari-eigenvalue-nilai-eigen">Langkah 1 : Mencari Eigenvalue (Nilai Eigen)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-2-mencari-eigenvector">Langkah 2 : Mencari Eigenvector</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-lambda-5">💠Untuk <span class="math notranslate nohighlight">\(\lambda\)</span> = 5:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-lambda-2">💠Untuk <span class="math notranslate nohighlight">\(\lambda\)</span> = 2:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#hasil-akhir">Hasil Akhir:</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#definisi-eigenvector-ortonormal-menjadikan-eigenvector-satu-kesatuan">Definisi Eigenvector Ortonormal menjadikan Eigenvector Satu Kesatuan</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvector">1. Eigenvector</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#ortonormalitas">2. Ortonormalitas</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#eigenvector-ortonormal">3. Eigenvector Ortonormal</a></li>
+</ul>
+</li>
+</ul>
+
   </nav></div>
 
 </div></div>
